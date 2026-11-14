@@ -1,0 +1,37 @@
+{
+  "lastLimitTouchedMs": null,
+  "accounts": {
+    "gagann33nn@gmail.com": {
+      "slot": 1,
+      "sent": 0,
+      "limit": 450,
+      "cycleStartedAt": null
+    },
+    "ig.swastik0@gmail.com": {
+      "slot": 2,
+      "sent": 0,
+      "limit": 450,
+      "cycleStartedAt": null
+    },
+    "ig.swastik0.1@gmail.com": {
+      "slot": 3,
+      "sent": 0,
+      "limit": 450,
+      "cycleStartedAt": null
+    },
+    "ig.swastik0.02@gmail.com": {
+      "slot": 4,
+      "sent": 0,
+      "limit": 450,
+      "cycleStartedAt": null
+    },
+    "dhalamma769@gmail.com": {
+      "slot": 5,
+      "sent": 0,
+      "limit": 450,
+      "cycleStartedAt": null
+    }
+  },
+  "lastUpdated": 1731033600000
+}
+

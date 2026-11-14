@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background with rounded squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="url(#gold)" stroke-width="6" opacity="0.4"/>
+  
+  <!-- Crown / Diamond / Shield Logo Motif -->
+  <g filter="url(#glow)">
+    <!-- Layered Stack / Command Center Diamond -->
+    <polygon points="256,90 390,170 256,250 122,170" fill="url(#gold)" opacity="0.95"/>
+    <polygon points="256,210 390,290 256,370 122,290" fill="url(#gold)" opacity="0.75"/>
+    <polygon points="256,330 390,410 256,490 122,410" fill="url(#gold)" opacity="0.55"/>
+  </g>
+  <!-- S Monogram in center -->
+  <text x="256" y="275" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="110" font-weight="900" fill="#020617" text-anchor="middle" dominant-baseline="middle">S</text>
+</svg>
+

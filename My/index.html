@@ -1,0 +1,4016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="theme-color" content="#020617" />
+  <!-- Mobile PWA App Capabilities -->
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="icon.svg" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="SWASTIK" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: http: data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https: http:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: http: blob:; connect-src 'self' https: http: wss: ws:;" />
+
+  <!-- Primary SEO Meta Tags -->
+  <title>SWASTIK – Enterprise Outreach Command Center</title>
+  <meta name="title" content="SWASTIK – Enterprise Outreach Command Center" />
+  <meta name="description" content="SWASTIK – $10k AI-Powered Automated Client Outreach Command Center. Hyper-personalized AI email generation, midnight 500-client automated crawler, equal multi-sender load balancing, persistent zero-duplicate database, and WhatsApp alerts to 9511347627." />
+  <link rel="canonical" href="https://swastik.dev" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://swastik.dev" />
+  <meta property="og:title" content="SWASTIK – Enterprise Outreach Command Center" />
+  <meta property="og:description" content="Hyper-personalized AI client outreach, multi-sender load balancing, and autonomous CRM pipeline." />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://swastik.dev" />
+  <meta property="twitter:title" content="SWASTIK – Enterprise Outreach Command Center" />
+  <meta property="twitter:description" content="Hyper-personalized AI client outreach, multi-sender load balancing, and autonomous CRM pipeline." />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  
+  <!-- INLINED CRITICAL STYLES: Guaranteed styling even if css folder is missing on cloud host -->
+  <style id="inlinedCriticalStyles">
+/* ═══════════════════════════════════════════════════════════
+   SWASTIK – $10k Agency Outreach Command Center | styles.css
+   Ultra-Luxury Obsidian Glassmorphism Design System
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Reset & Core Variables ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Dark Obsidian & Midnight Palette */
+  --bg-dark:        #060810;
+  --bg-deep:        #090d1a;
+  --bg-surface:     rgba(13, 19, 36, 0.72);
+  --bg-card:        rgba(16, 24, 46, 0.65);
+  --bg-card-hover:  rgba(24, 35, 66, 0.85);
+  --bg-card-active: rgba(30, 44, 84, 0.95);
+
+  /* Glassmorphism & High-Ticket Borders */
+  --border:         rgba(255, 255, 255, 0.08);
+  --border-light:   rgba(255, 255, 255, 0.16);
+  --border-glow:    rgba(14, 165, 233, 0.45);
+  --border-emerald: rgba(16, 185, 129, 0.45);
+
+  /* Luxury Neon & Bespoke Champagne Gold Accents */
+  --primary:        #0ea5e9; /* Electric Sapphire / Cyan */
+  --primary-glow:   rgba(14, 165, 233, 0.35);
+  --accent-blue:    #0284c7; /* Ocean Cobalt */
+  --accent-cyan:    #06b6d4; /* Aurora Cyan */
+  --emerald:        #10b981; /* High-Roller Green */
+  --emerald-glow:   rgba(16, 185, 129, 0.3);
+  --amber:          #f59e0b; /* Golden Amber */
+  --rose:           #f43f5e; /* Cyber Crimson */
+
+  /* Tasteful Champagne Gold & Burnished Titanium */
+  --gold-primary:   #d4af37; /* Metallic Champagne Gold */
+  --gold-light:     #f4dda9; /* Soft Champagne Gold */
+  --gold-dim:       #997a23; /* Burnished Gold */
+  --gold-glow:      rgba(212, 175, 55, 0.25);
+  --border-gold:    rgba(212, 175, 55, 0.28);
+
+  /* Typography Colors */
+  --text-main:      #f8fafc;
+  --text-muted:     #94a3b8;
+  --text-dim:       #64748b;
+  --text-faint:     #334155;
+
+  /* Dimensions */
+  --sidebar-w:      260px;
+  --header-h:       68px;
+  --radius-xs:      6px;
+  --radius-sm:      10px;
+  --radius:         16px;
+  --radius-lg:      24px;
+  --radius-full:    9999px;
+
+  /* Shadows & Glow Effects */
+  --shadow-subtle:  0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-card:    0 10px 30px -10px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--border);
+  --shadow-card-hover: 0 20px 40px -12px rgba(0, 0, 0, 0.8), 0 0 25px rgba(14, 165, 233, 0.25);
+  --shadow-glow:    0 0 35px rgba(14, 165, 233, 0.3);
+  --shadow-modal:   0 25px 70px -15px rgba(0, 0, 0, 0.9), 0 0 50px rgba(14, 165, 233, 0.2);
+
+  --font-sans:      'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --transition:     all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ── Global Utility: Hidden ── */
+.hidden {
+  display: none !important;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-sans);
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ═══════════════════════════════
+   ANIMATED AURORA LUXURY BACKGROUND
+   ═══════════════════════════════ */
+.aurora-canvas-wrap {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+.aurora-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.65;
+  animation: aurora-drift 22s infinite alternate ease-in-out;
+  will-change: transform, opacity;
+}
+.orb-1 {
+  top: -10%;
+  left: 15%;
+  width: 750px;
+  height: 750px;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.7) 0%, rgba(2, 132, 199, 0.4) 40%, transparent 70%);
+  animation-duration: 20s;
+}
+.orb-2 {
+  bottom: -15%;
+  right: 10%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.6) 0%, rgba(6, 182, 212, 0.35) 45%, transparent 70%);
+  animation-duration: 26s;
+  animation-delay: -6s;
+}
+.orb-3 {
+  top: 35%;
+  right: 20%;
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.38) 0%, rgba(180, 130, 20, 0.18) 45%, transparent 70%);
+  animation-duration: 30s;
+  animation-delay: -12s;
+}
+.orb-4 {
+  bottom: 20%;
+  left: 8%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.55) 0%, rgba(14, 165, 233, 0.3) 45%, transparent 70%);
+  animation-duration: 24s;
+  animation-delay: -18s;
+}
+.aurora-mesh {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(6, 8, 16, 0.2) 0%, rgba(6, 8, 16, 0.7) 100%);
+  background-size: 32px 32px, 100% 100%;
+  opacity: 0.9;
+}
+
+@keyframes aurora-drift {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  33% { transform: translate(50px, -40px) scale(1.1) rotate(120deg); }
+  66% { transform: translate(-35px, 30px) scale(0.95) rotate(240deg); }
+  100% { transform: translate(0, 0) scale(1) rotate(360deg); }
+}
+
+/* ═══════════════════════════════
+   DYNAMIC COUNTRY PRICING MATRIX STYLES
+   ═══════════════════════════════ */
+.pricing-matrix-panel {
+  background: rgba(14, 20, 38, 0.75);
+  border: 1px solid rgba(14, 165, 233, 0.28);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 30px rgba(14, 165, 233, 0.12);
+  backdrop-filter: blur(24px);
+  position: relative;
+  overflow: hidden;
+}
+.pricing-matrix-panel::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, #0ea5e9, #10b981, #0284c7);
+}
+.pricing-matrix-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.15rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.pricing-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 0.85rem;
+}
+.country-price-card {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1rem;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+.country-price-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(14, 165, 233, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+.country-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.country-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.country-count-tag {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-full);
+  background: rgba(14, 165, 233, 0.15);
+  color: #bae6fd;
+  font-weight: 600;
+}
+.country-price-box {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(7, 10, 20, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xs);
+  padding: 0.35rem 0.65rem;
+}
+.country-price-box .currency-tag {
+  font-weight: 800;
+  color: #10b981;
+  font-size: 0.95rem;
+}
+.country-price-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  width: 100%;
+}
+.country-price-input:focus {
+  color: #7dd3fc;
+}
+
+/* Ambient Radial Mesh Glow */
+body::before {
+  content: '';
+  position: fixed;
+  top: -15%;
+  left: -10%;
+  width: 55vw;
+  height: 55vh;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.14) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(90px);
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: -15%;
+  right: -10%;
+  width: 65vw;
+  height: 65vh;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, rgba(2, 132, 199, 0.08) 50%, transparent 75%);
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(100px);
+}
+
+/* ── Sleek Custom Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.28); }
+
+/* ═══════════════════════════════
+   AUTHENTICATION & LOGIN SCREEN
+   ═══════════════════════════════ */
+.login-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 7, 16, 0.5);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 1.5rem;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 440px;
+  background: rgba(12, 17, 34, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2.25rem;
+  box-shadow: 0 30px 80px -10px rgba(0, 0, 0, 0.9), 0 0 50px rgba(14, 165, 233, 0.35);
+  backdrop-filter: blur(36px);
+  -webkit-backdrop-filter: blur(36px);
+  position: relative;
+  overflow: hidden;
+  animation: loginSlideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.login-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #0ea5e9, #10b981, transparent);
+}
+
+@keyframes loginSlideUp {
+  from { opacity: 0; transform: translateY(20px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.login-logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-logo .logo-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+  border-radius: 18px;
+  font-size: 1.85rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+  box-shadow: 0 0 35px rgba(14, 165, 233, 0.6);
+  color: #fff;
+}
+
+.login-logo h1 {
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  background: linear-gradient(135deg, #ffffff 40%, #bae6fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.login-logo p {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  margin-top: 0.35rem;
+}
+
+.error-msg {
+  background: rgba(244, 63, 94, 0.14);
+  border: 1px solid rgba(244, 63, 94, 0.35);
+  color: #fecdd3;
+  border-radius: var(--radius-sm);
+  padding: 0.7rem 0.95rem;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.btn-text {
+  display: inline-block;
+}
+
+.btn-loader {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+}
+
+/* ═══════════════════════════════
+   GLASS & UTILITY PANELS
+   ═══════════════════════════════ */
+.glass {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-radius: var(--radius);
+}
+
+.glass-deep {
+  background: rgba(12, 18, 36, 0.85);
+  border: 1px solid var(--border-light);
+  backdrop-filter: blur(32px) saturate(200%);
+  -webkit-backdrop-filter: blur(32px) saturate(200%);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-modal);
+}
+
+.panel {
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+
+/* ═══════════════════════════════
+   TOP EXECUTIVE HUD BAR
+   ═══════════════════════════════ */
+.hud-bar {
+  height: var(--header-h);
+  background: rgba(8, 12, 24, 0.55);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.75rem;
+  z-index: 50;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.hud-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.hud-status-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.status-pill:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--border-light);
+  color: var(--text-main);
+}
+.status-pill.active {
+  border-color: rgba(16, 185, 129, 0.35);
+  background: rgba(16, 185, 129, 0.1);
+  color: #6ee7b7;
+}
+
+.hud-right {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--emerald);
+  box-shadow: 0 0 10px var(--emerald);
+  animation: pulseLive 2s infinite ease-in-out;
+}
+
+@keyframes pulseLive {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.6; }
+}
+
+.countdown-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(14, 165, 233, 0.1);
+  border: 1px solid rgba(14, 165, 233, 0.28);
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  color: #bae6fd;
+}
+.countdown-box strong {
+  font-family: monospace;
+  font-size: 0.95rem;
+  color: #fff;
+  letter-spacing: 0.06em;
+}
+
+/* ═══════════════════════════════
+   APP LAYOUT & SIDEBAR
+   ═══════════════════════════════ */
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.app-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.sidebar {
+  width: var(--sidebar-w);
+  background: rgba(8, 12, 24, 0.65);
+  border-right: 1px solid var(--border);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0.85rem;
+  flex-shrink: 0;
+  z-index: 60;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.5rem 0.75rem 1.75rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.25rem;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.25rem;
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.5);
+  flex-shrink: 0;
+}
+
+.brand-details h1 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  background: linear-gradient(135deg, #ffffff 40%, #bae6fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.brand-details span {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-cyan);
+  font-weight: 700;
+}
+
+/* Sidebar Nav */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: left;
+  position: relative;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.nav-item.active {
+  background: linear-gradient(90deg, rgba(14, 165, 233, 0.18), rgba(14, 165, 233, 0.04));
+  border-color: rgba(14, 165, 233, 0.35);
+  color: #fff;
+  box-shadow: inset 3px 0 0 0 #0ea5e9;
+}
+
+.nav-item.active .nav-icon {
+  color: #38bdf8;
+  filter: drop-shadow(0 0 8px rgba(14, 165, 233, 0.6));
+}
+
+.nav-icon {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.badge {
+  margin-left: auto;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(14, 165, 233, 0.25);
+  color: #7dd3fc;
+  border: 1px solid rgba(14, 165, 233, 0.4);
+}
+.badge-green {
+  background: rgba(16, 185, 129, 0.25);
+  color: #6ee7b7;
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.sender-hud-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+}
+.sender-hud-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.sender-hud-split {
+  font-size: 0.78rem;
+  color: #bae6fd;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.btn-logout {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.65rem 0.85rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn-logout:hover {
+  background: rgba(244, 63, 94, 0.14);
+  border-color: rgba(244, 63, 94, 0.35);
+  color: #fda4af;
+}
+
+/* ═══════════════════════════════
+   MAIN CONTENT AREA
+   ═══════════════════════════════ */
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 2rem 2.25rem;
+  position: relative;
+}
+
+.tab {
+  display: none;
+  animation: tabFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.tab.active { display: block; }
+
+@keyframes tabFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.tab-header h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.tab-sub {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 0.35rem;
+}
+
+/* ═══════════════════════════════
+   $10K KPI STATS GRID
+   ═══════════════════════════════ */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: var(--border-light);
+}
+
+.stat-card::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 90px; height: 90px;
+  border-radius: 50%;
+  filter: blur(35px);
+  pointer-events: none;
+  opacity: 0.16;
+}
+.stat-card.stat-cyan-glow::after { background: var(--primary); }
+.stat-card.stat-blue::after { background: var(--accent-blue); }
+.stat-card.stat-emerald::after { background: var(--emerald); }
+.stat-card.stat-cyan::after { background: var(--accent-cyan); }
+.stat-card.stat-gold::after { background: var(--gold-primary); }
+.stat-card.stat-gold {
+  border-color: rgba(212, 175, 55, 0.26);
+}
+.stat-card.stat-gold:hover {
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 16px 36px -10px rgba(0,0,0,0.8), 0 0 25px rgba(212, 175, 55, 0.2);
+}
+
+.stat-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+.stat-icon.gold {
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: #f4dda9;
+}
+.stat-icon.cyan-glow {
+  background: rgba(14, 165, 233, 0.14);
+  border: 1px solid rgba(14, 165, 233, 0.35);
+  color: #38bdf8;
+}
+.stat-icon.blue {
+  background: rgba(2, 132, 199, 0.14);
+  border: 1px solid rgba(2, 132, 199, 0.35);
+  color: #38bdf8;
+}
+.stat-icon.emerald {
+  background: rgba(16, 185, 129, 0.14);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #34d399;
+}
+.stat-icon.cyan {
+  background: rgba(6, 182, 212, 0.14);
+  border: 1px solid rgba(6, 182, 212, 0.35);
+  color: #22d3ee;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+.stat-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+}
+.stat-value {
+  font-size: 1.95rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  margin-top: 0.2rem;
+  line-height: 1;
+}
+.stat-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--emerald);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 0.35rem;
+}
+
+/* ═══════════════════════════════
+   BUTTONS & CONTROLS
+   ═══════════════════════════════ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: transform 0.08s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.08s ease, background 0.12s ease, box-shadow 0.12s ease;
+  border: 1px solid transparent;
+  outline: none;
+  white-space: nowrap;
+  position: relative;
+  user-select: none;
+}
+.btn:active {
+  transform: translateY(1px) scale(0.99);
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #0ea5e9 0%, #0369a1 100%);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 18px rgba(14, 165, 233, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+.btn-primary:hover {
+  background: linear-gradient(180deg, #38bdf8 0%, #0284c7 100%);
+  box-shadow: 0 8px 28px rgba(14, 165, 233, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transform: translateY(-1.5px);
+}
+
+.btn-emerald {
+  background: linear-gradient(180deg, #10b981 0%, #047857 100%);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 18px rgba(16, 185, 129, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+.btn-emerald:hover {
+  background: linear-gradient(180deg, #18c48c 0%, #059669 100%);
+  box-shadow: 0 8px 28px rgba(16, 185, 129, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transform: translateY(-1.5px);
+}
+
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-main);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
+}
+
+.btn-danger {
+  background: linear-gradient(180deg, rgba(244, 63, 94, 0.2) 0%, rgba(225, 29, 72, 0.25) 100%);
+  border: 1px solid rgba(244, 63, 94, 0.35);
+  color: #fda4af;
+}
+.btn-danger:hover {
+  background: linear-gradient(180deg, rgba(244, 63, 94, 0.35) 0%, rgba(225, 29, 72, 0.4) 100%);
+  border-color: rgba(244, 63, 94, 0.55);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.btn-sm { padding: 0.4rem 0.85rem; font-size: 0.78rem; border-radius: var(--radius-xs); }
+.btn-full { width: 100%; }
+
+/* Form Fields */
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.field-group label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+}
+
+.field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(10, 15, 29, 0.75);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 0.88rem;
+  transition: var(--transition);
+  outline: none;
+}
+.field:focus {
+  border-color: var(--primary);
+  background: rgba(15, 23, 42, 0.95);
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.22);
+}
+.field::placeholder { color: var(--text-dim); }
+
+.field-select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2394a3b8' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 1rem) center;
+  padding-right: 2.5rem;
+}
+
+.field-textarea {
+  resize: vertical;
+  line-height: 1.5;
+}
+
+/* ═══════════════════════════════
+   FIND CLIENTS: GEOGRAPHIC SELECTOR
+   ═══════════════════════════════ */
+.find-grid {
+  display: grid;
+  grid-template-columns: 370px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.geo-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.chips-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  padding: 0.45rem 0.85rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.chip:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-main);
+  border-color: var(--border-light);
+}
+.chip.active,
+.chip-filter.active {
+  background: rgba(14, 165, 233, 0.22);
+  border-color: rgba(14, 165, 233, 0.55);
+  color: #bae6fd;
+}
+
+/* ═══════════════════════════════
+   MULTI-SENDER BALANCING BANNER
+   ═══════════════════════════════ */
+.split-banner {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.14), rgba(16, 185, 129, 0.12));
+  border: 1px solid rgba(14, 165, 233, 0.32);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.split-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.split-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.split-sub {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.split-meters {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.split-meter-box {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+.split-badge {
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-xs);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.split-badge.acc1 {
+  background: rgba(14, 165, 233, 0.2);
+  color: #7dd3fc;
+  border: 1px solid rgba(14, 165, 233, 0.4);
+}
+.split-badge.acc2 {
+  background: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+/* ═══════════════════════════════
+   EMAIL CARDS & AI DIAGNOSTIC BADGES
+   ═══════════════════════════════ */
+.email-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.email-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  transition: var(--transition);
+  position: relative;
+}
+.email-card:hover {
+  border-color: var(--border-light);
+  background: var(--bg-card-hover);
+  box-shadow: var(--shadow-card);
+}
+
+.email-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.email-biz-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.email-routing-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  margin-top: 0.25rem;
+}
+
+/* AI Need & Diagnostic Pill */
+.ai-diagnostic-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.8rem;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.32);
+  color: #fcd34d;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.85rem;
+}
+
+.email-subject-line {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin-bottom: 0.65rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.email-body-preview {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  background: rgba(10, 14, 26, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  white-space: pre-line;
+  max-height: 160px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.email-actions-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+  padding-top: 0.85rem;
+}
+
+.sender-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-xs);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.sender-tag.s1 {
+  background: rgba(14, 165, 233, 0.16);
+  color: #bae6fd;
+  border: 1px solid rgba(14, 165, 233, 0.35);
+}
+.sender-tag.s2 {
+  background: rgba(16, 185, 129, 0.16);
+  color: #a7f3d0;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+/* ═══════════════════════════════
+   FLOATING ACTION DOCK
+   ═══════════════════════════════ */
+.floating-dock {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(140px);
+  background: rgba(14, 20, 38, 0.96);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 35px rgba(14, 165, 233, 0.35);
+  backdrop-filter: blur(28px);
+  padding: 0.85rem 1.6rem;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 100;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.floating-dock.show {
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ═══════════════════════════════
+   MODAL WINDOWS & OVERLAYS
+   ═══════════════════════════════ */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(4, 6, 12, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.modal {
+  width: 100%;
+  max-width: 680px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: modalPop 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalPop {
+  from { opacity: 0; transform: scale(0.96) translateY(10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.modal-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.modal-footer {
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+/* ═══════════════════════════════
+   TOAST & LOADING OVERLAY
+   ═══════════════════════════════ */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-modal);
+  backdrop-filter: blur(20px);
+  padding: 0.85rem 1.35rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 600;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  animation: toastSlide 0.3s ease both;
+}
+.toast.success { border-color: rgba(16, 185, 129, 0.5); color: #a7f3d0; }
+.toast.error { border-color: rgba(244, 63, 94, 0.5); color: #fecdd3; }
+.toast.info { border-color: rgba(14, 165, 233, 0.5); color: #bae6fd; }
+
+@keyframes toastSlide {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(4, 6, 12, 0.88);
+  backdrop-filter: blur(24px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-box {
+  padding: 2.5rem 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 3px solid rgba(14, 165, 233, 0.2);
+  border-top-color: #0ea5e9;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Progress bar inside loading box */
+.progress-bar-wrap {
+  width: 260px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-top: 0.65rem;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0ea5e9, #10b981);
+  width: 0%;
+  transition: width 0.2s ease;
+}
+
+/* ═══════════════════════════════
+   KANBAN DEAL CRM
+   ═══════════════════════════════ */
+.kanban-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  min-height: 550px;
+  align-items: start;
+}
+
+.kanban-column {
+  background: rgba(14, 20, 38, 0.65);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  backdrop-filter: blur(20px);
+}
+
+.kanban-won-col {
+  border-color: rgba(16, 185, 129, 0.35);
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.kanban-col-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+.kanban-col-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #fff;
+}
+.kanban-col-count {
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+}
+
+.kanban-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  min-height: 200px;
+}
+
+.deal-card {
+  background: rgba(20, 28, 54, 0.85);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  transition: var(--transition);
+  cursor: grab;
+  position: relative;
+}
+.deal-card:hover {
+  border-color: var(--border-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+.deal-card-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.35rem;
+}
+.deal-card-val {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--emerald);
+  margin-bottom: 0.65rem;
+}
+.deal-card-meta {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Portfolio Manager Showcase Rows */
+.portfolio-row {
+  display: grid;
+  grid-template-columns: 140px 1.4fr 2fr 45px;
+  gap: 0.65rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--border);
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--trans);
+}
+.portfolio-row:hover {
+  background: rgba(255, 255, 255, 0.045);
+  border-color: rgba(14, 165, 233, 0.35);
+}
+.portfolio-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.6rem;
+  background: rgba(14, 165, 233, 0.15);
+  border: 1px solid rgba(14, 165, 233, 0.3);
+  color: #bae6fd;
+  font-size: 0.75rem;
+  border-radius: var(--radius-xs);
+  margin-bottom: 0.5rem;
+}
+
+/* ═══════════════════════════════
+   RESPONSIVE DESIGN
+   ═══════════════════════════════ */
+@media (max-width: 1024px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .find-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0; bottom: 0; left: 0;
+    transform: translateX(-100%);
+    box-shadow: 10px 0 40px rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+  .sidebar.open { transform: translateX(0); }
+  #mobileMenuBtn { display: inline-flex !important; }
+  .stats-grid { grid-template-columns: 1fr; }
+  .hud-status-pills { display: none; }
+  .content { padding: 1.25rem 1rem; }
+}
+
+
+/* Modern Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 26px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #fff;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+input:checked + .slider {
+  background-color: #10b981;
+  border-color: #10b981;
+}
+input:checked + .slider:before {
+  transform: translateX(22px);
+  background-color: #000;
+}
+.slider.round {
+  border-radius: 99px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   SWASTIK 60FPS HARDWARE ACCELERATION & MICRO-INTERACTIONS
+   ═══════════════════════════════════════════════════════════ */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 60fps GPU Compositing on interactive surfaces */
+.btn, .dock-item, .chip, .email-card, .login-card, .glass, .top-command-bar {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Ultra-smooth button micro-interactions */
+.btn {
+  position: relative;
+  touch-action: manipulation;
+  transition: transform 0.16s cubic-bezier(0.2, 0.8, 0.2, 1),
+              box-shadow 0.16s cubic-bezier(0.2, 0.8, 0.2, 1),
+              background-color 0.16s ease,
+              border-color 0.16s ease,
+              opacity 0.16s ease;
+  user-select: none;
+}
+
+.btn:hover {
+  transform: translateY(-1.5px);
+}
+
+.btn:active {
+  transform: translateY(0.5px) scale(0.985);
+}
+
+.btn:disabled {
+  transform: none !important;
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+/* Butter-smooth card hover & lift */
+.email-card {
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.2s ease;
+}
+
+.email-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.65), 0 0 24px rgba(212, 175, 55, 0.08);
+}
+
+/* Interactive Filter Chips */
+.chip {
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.chip:hover {
+  transform: translateY(-1px);
+}
+
+.chip:active {
+  transform: scale(0.97);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   ULTRA-MOBILE RESPONSIVENESS (320px - 768px Screens)
+   ═══════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .top-command-bar {
+    padding: 0.5rem 0.75rem;
+  }
+  .tcb-bar-pill {
+    padding: 0.35rem 0.65rem;
+  }
+  .tcb-title {
+    font-size: 0.95rem;
+  }
+  .proximity-dock-wrap {
+    bottom: 0.5rem;
+    padding: 0 0.5rem;
+  }
+  .dock-inner {
+    padding: 0.35rem 0.5rem;
+    gap: 0.35rem;
+    max-width: 100vw;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .dock-inner::-webkit-scrollbar {
+    display: none;
+  }
+  .dock-item {
+    padding: 0.4rem 0.65rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    min-height: 42px;
+  }
+}
+
+@media (max-width: 580px) {
+  .content {
+    padding: 1rem 0.65rem 5.5rem 0.65rem;
+  }
+  
+  /* Stack split banner vertically */
+  .split-banner {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.85rem;
+    gap: 0.75rem;
+  }
+  .split-meters {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.4rem;
+  }
+  
+  /* Filter chips smooth horizontal scroll on mobile */
+  .chips-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.25rem;
+    scrollbar-width: none;
+  }
+  .chips-container::-webkit-scrollbar {
+    display: none;
+  }
+  .chips-container .chip {
+    flex-shrink: 0;
+    font-size: 0.76rem;
+    padding: 0.35rem 0.65rem;
+  }
+
+  /* Card action buttons stack cleanly */
+  .email-card {
+    padding: 1rem;
+    margin-bottom: 0.85rem;
+  }
+  .email-actions-bar {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 0.65rem;
+  }
+  .email-actions-bar > div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: stretch;
+    gap: 0.5rem;
+  }
+  .email-actions-bar .btn {
+    flex: 1 1 auto;
+    text-align: center;
+    justify-content: center;
+    padding: 0.55rem 0.75rem;
+    font-size: 0.82rem;
+  }
+
+  /* Textarea auto-scales font to prevent iOS zoom */
+  input[type="text"], input[type="email"], input[type="password"], textarea, select {
+    font-size: 16px !important;
+  }
+
+  .portfolio-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.4rem;
+  }
+  .portfolio-row .field {
+    width: 100% !important;
+  }
+}
+
+/* Micro screens (320px - 380px) */
+@media (max-width: 380px) {
+  .login-card {
+    padding: 1.5rem 1rem;
+    margin: 0.5rem;
+  }
+  .tcb-wordmark h1 {
+    font-size: 0.85rem;
+  }
+  .email-biz-title {
+    font-size: 0.95rem;
+    word-break: break-word;
+  }
+  .btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.78rem;
+  }
+}
+
+
+/* Ultra-responsive instant tactile feedback */
+.btn:active {
+  transform: scale(0.97) translateZ(0) !important;
+  transition-duration: 0.04s !important;
+}
+.chip:active {
+  transform: scale(0.95) translateZ(0) !important;
+  transition-duration: 0.04s !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   UNIVERSAL ULTRA-RESPONSIVE VIEWPORT ENGINE (Every Screen)
+   Guarantees 100% zero-overflow, zero horizontal scroll,
+   and flawless rendering from 320px micro-screens to 4K displays.
+   ═══════════════════════════════════════════════════════════ */
+html, body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+  .top-command-bar {
+    padding: 0.4rem 0.6rem !important;
+  }
+  .tcb-container {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.4rem !important;
+  }
+  .tcb-actions {
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    gap: 0.35rem !important;
+  }
+  .content {
+    width: 100% !important;
+    max-width: 100vw !important;
+    padding: 0.65rem 0.45rem 6.5rem 0.45rem !important;
+  }
+  .tab {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .card, .email-card, .glass, .split-banner {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 10px !important;
+  }
+  .email-card-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.4rem !important;
+  }
+  .email-actions-bar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.5rem !important;
+  }
+  .email-actions-bar > div {
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+  .email-actions-bar .btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .chips-container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .proximity-dock-wrap {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+    bottom: 0.25rem !important;
+    padding: 0 0.3rem !important;
+  }
+  .dock-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 0.2rem !important;
+    padding: 0.25rem 0.35rem !important;
+  }
+  .dock-item {
+    padding: 0.35rem 0.4rem !important;
+    font-size: 0.68rem !important;
+    min-height: 38px !important;
+  }
+  .dock-item .dock-label {
+    font-size: 0.64rem !important;
+  }
+}
+
+@media (max-width: 340px) {
+  .email-biz-title {
+    font-size: 0.88rem !important;
+  }
+  .dock-item {
+    padding: 0.25rem 0.3rem !important;
+    font-size: 0.62rem !important;
+  }
+}
+
+/* ════════════════════════════════════════════════════════════════
+   SWASTIK EXECUTIVE COMMAND CENTER — Bespoke Luxury Top Bar (v5.0)
+   Obsidian Frosted Glass, Electric Cyan & Emerald Accents ($50k Look)
+   Zero Purple / Violet — 100% Crisp Professional Architecture
+   ════════════════════════════════════════════════════════════════ */
+
+/* ── App Layout ── */
+.app {
+  flex-direction: column !important;
+}
+.app-body {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: calc(100vh - 76px) !important;
+  overflow: hidden !important;
+}
+.sidebar, .hud-bar { display: none !important; }
+
+/* ════════════════════════════════════════════════════════════════
+   TOP COMMAND BAR SHELL
+   ════════════════════════════════════════════════════════════════ */
+.top-command-bar {
+  position: relative;
+  z-index: 9000;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px 0;
+}
+
+/* Fluid Aurora Behind Header */
+.tcb-aurora {
+  position: absolute;
+  inset: -30% -10% auto -10%;
+  z-index: -1;
+  height: 220%;
+  pointer-events: none;
+  background:
+    radial-gradient(50% 60% at 20% 40%, rgba(14, 165, 233, 0.28), transparent 70%),
+    radial-gradient(45% 55% at 80% 25%, rgba(16, 185, 129, 0.22), transparent 70%),
+    radial-gradient(35% 45% at 50% 10%, rgba(6, 182, 212, 0.18), transparent 70%);
+  filter: blur(14px);
+  animation: auroraFloat 14s ease-in-out infinite alternate;
+}
+
+@keyframes auroraFloat {
+  0%   { opacity: 0.75; transform: translateY(0) scale(1); }
+  100% { opacity: 0.95; transform: translateY(-6px) scale(1.02); }
+}
+
+/* ════════════════════════════════════════════════════════════════
+   THE COMMAND BAR PILL (Obsidian Frosted Glass Capsule)
+   ════════════════════════════════════════════════════════════════ */
+.tcb-bar-pill {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 1.8vw, 28px);
+  width: max-content;
+  max-width: min(1360px, calc(100% - 20px));
+  height: 58px;
+  padding: 5px 8px 5px 18px;
+  border: 1px solid rgba(212, 175, 55, 0.16);
+  border-top: 1px solid rgba(244, 221, 169, 0.3);
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(14, 20, 32, 0.9), rgba(8, 12, 20, 0.84));
+  box-shadow:
+    0 24px 50px -15px rgba(0, 0, 0, 0.9),
+    0 0 35px rgba(212, 175, 55, 0.04),
+    0 1px 0 0 rgba(244, 221, 169, 0.15) inset;
+  backdrop-filter: blur(28px) saturate(180%);
+  -webkit-backdrop-filter: blur(28px) saturate(180%);
+  position: relative;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   LEFT: WORDMARK & BRAND CREST
+   ════════════════════════════════════════════════════════════════ */
+.tcb-wordmark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.tcb-logo-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4dda9;
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.3), 0 2px 6px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+}
+
+.tcb-logo-icon svg {
+  display: block;
+  width: 17px;
+  height: 17px;
+  color: #f4dda9;
+}
+
+.tcb-wordmark-text {
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  background: linear-gradient(135deg, #ffffff 40%, #f4dda9 75%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   CENTER: PROXIMITY DOCK NAVIGATION
+   ════════════════════════════════════════════════════════════════ */
+.proximity-dock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dock-inner {
+  display: flex;
+  flex: none;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  overflow: visible;
+}
+
+/* Individual Dock Item */
+.dock-item {
+  display: inline-flex;
+  flex: none;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  padding: 0 13px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: #94a3b8;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  cursor: pointer;
+  white-space: nowrap;
+  outline: none;
+  position: relative;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dock-item:hover {
+  color: #f8fafc;
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Active State: Luxurious Emerald / Cyan Glow */
+.dock-item.active {
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.22) 0%, rgba(16, 185, 129, 0.16) 100%);
+  border-color: rgba(14, 165, 233, 0.45);
+  box-shadow:
+    0 0 16px rgba(14, 165, 233, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.dock-item.active .dock-icon {
+  color: #38bdf8;
+  filter: drop-shadow(0 0 6px rgba(14, 165, 233, 0.7));
+}
+
+/* Icon */
+.dock-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  transition: all 0.18s;
+  color: #94a3b8;
+}
+.dock-item:hover .dock-icon {
+  color: #f8fafc;
+}
+
+/* Notification Badges */
+.dock-badge {
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 0.12rem 0.45rem;
+  border-radius: 99px;
+  background: rgba(14, 165, 233, 0.25);
+  color: #7dd3fc;
+  border: 1px solid rgba(14, 165, 233, 0.45);
+  line-height: 1.3;
+  min-width: 17px;
+  text-align: center;
+}
+
+.dock-badge-green {
+  background: rgba(16, 185, 129, 0.22);
+  color: #6ee7b7;
+  border-color: rgba(16, 185, 129, 0.45);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   RIGHT: LIVE METRICS & CTA ACTION BUTTON
+   ════════════════════════════════════════════════════════════════ */
+.tcb-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* DB Count Pill */
+.tcb-live-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #94a3b8;
+  padding: 0 10px;
+  height: 36px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  white-space: nowrap;
+}
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 10px #10b981;
+  animation: pulseLive 2s infinite ease-in-out;
+}
+
+/* Countdown Pill */
+.top-command-bar .countdown-box {
+  padding: 0 12px;
+  font-size: 0.78rem;
+  gap: 5px;
+  white-space: nowrap;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  border-radius: 999px;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.26);
+  color: #f4dda9;
+}
+.top-command-bar .countdown-box strong {
+  font-family: monospace;
+  font-size: 0.88rem;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+}
+
+/* High-Ticket Gradient CTA Button with Champagne Gold Accent */
+.btn-dock-cta {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  height: 38px;
+  padding: 0 17px;
+  border-radius: 999px;
+  border: 1px solid rgba(244, 221, 169, 0.32);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 40%, #d4af37 100%);
+  box-shadow:
+    0 4px 18px rgba(14, 165, 233, 0.35),
+    0 0 20px rgba(212, 175, 55, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-dock-cta:hover {
+  transform: translateY(-1.5px) scale(1.02);
+  box-shadow:
+    0 8px 25px rgba(14, 165, 233, 0.5),
+    0 0 28px rgba(212, 175, 55, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.btn-dock-cta:active {
+  transform: translateY(0) scale(0.99);
+}
+
+.btn-dock-cta svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  stroke-width: 2.2;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   CONTENT AREA
+   ════════════════════════════════════════════════════════════════ */
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.75rem 2.25rem;
+  position: relative;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   RESPONSIVE DESIGN
+   ════════════════════════════════════════════════════════════════ */
+@media (max-width: 1200px) {
+  .dock-item span:not(.dock-badge) { display: none; }
+  .dock-item { padding: 0 10px; }
+}
+
+@media (max-width: 900px) {
+  .top-command-bar { padding: 8px 12px 0; }
+  .tcb-bar-pill { gap: 8px; padding: 4px 6px 4px 12px; }
+  .tcb-live-indicator { display: none; }
+  .top-command-bar .countdown-box { display: none; }
+}
+
+@media (max-width: 600px) {
+  .tcb-wordmark-text { display: none; }
+  .dock-item { padding: 0 6px; }
+}
+
+  </style>
+  <link rel="stylesheet" href="css/styles.css?v=8.5" />
+  <link rel="stylesheet" href="css/dock-bar.css?v=8.5" />
+</head>
+<body>
+
+  <!-- ─── ANIMATED AURORA LUXURY BACKGROUND ─── -->
+  <div class="aurora-canvas-wrap" aria-hidden="true">
+    <div class="aurora-orb orb-1"></div>
+    <div class="aurora-orb orb-2"></div>
+    <div class="aurora-orb orb-3"></div>
+    <div class="aurora-orb orb-4"></div>
+    <div class="aurora-mesh"></div>
+  </div>
+
+  <!-- ─── LOGIN SCREEN (Hidden by default for instant access) ─── -->
+  <div id="loginScreen" class="login-overlay hidden">
+    <div class="login-card glass-deep">
+      <div class="login-logo">
+        <div class="logo-icon" style="width:58px;height:58px;font-size:1.75rem;margin:0 auto 1rem;">S</div>
+        <h1 style="font-size:1.75rem;font-weight:800;letter-spacing:0.04em;">SWASTIK</h1>
+        <p style="color:var(--text-muted);font-size:0.85rem;margin-top:0.25rem;">Enterprise Outreach Command Center</p>
+      </div>
+      <form id="loginForm" novalidate>
+        <div class="field-group" style="margin-bottom:1rem;">
+          <label for="emailInput">Authorized Email</label>
+          <input type="email" id="emailInput" class="field" value="admin@swastik.com" placeholder="admin@swastik.com" autocomplete="email" />
+        </div>
+        <div class="field-group" style="margin-bottom:1.25rem;">
+          <label for="passwordInput">Security Key / Password</label>
+          <input type="password" id="passwordInput" class="field" value="swastik2024" placeholder="••••••••" autocomplete="current-password" />
+        </div>
+        <div id="loginError" class="error-msg hidden"></div>
+        <button type="submit" id="loginBtn" class="btn btn-primary btn-full" style="padding:0.85rem;">
+          <span class="btn-text">Authenticate & Launch</span>
+          <span class="btn-loader hidden"></span>
+        </button>
+        <button type="button" id="quickDemoLoginBtn" class="btn btn-ghost btn-full btn-sm" style="margin-top:0.75rem;border-color:rgba(14, 165, 233,0.35);color:#bae6fd;">
+          ⚡ Instant One-Click Login
+        </button>
+      </form>
+      <div style="margin-top:1.5rem;text-align:center;font-size:0.75rem;color:var(--text-dim);display:flex;align-items:center;justify-content:center;gap:0.5rem;">
+        <span class="live-dot"></span> Protected by SwastikEnterpriseDB Anti-Duplicate Shield
+      </div>
+    </div>
+  </div>
+
+  <!--  MAIN APP CONTAINER  -->
+  <div id="mainApp" class="app">
+
+    <!-- SWASTIK EXECUTIVE LUXURY COMMAND BAR -->
+    <header class="top-command-bar" id="topCommandBar">
+      <div class="tcb-aurora" aria-hidden="true"></div>
+      <div class="tcb-bar-pill">
+        <a class="tcb-wordmark" href="#dashboard" onclick="event.preventDefault()">
+          <div class="tcb-logo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="tcb-wordmark-text">SWASTIK</span>
+        </a>
+        <nav class="proximity-dock" id="proximityDock">
+          <div class="dock-inner">
+            <button class="dock-item active" data-tab="dashboard" id="navDashboard">
+              <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+              <span>Dashboard</span>
+            </button>
+            <button class="dock-item" data-tab="findClients" id="navFindClients">
+              <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+              <span>Find Clients</span>
+            </button>
+            <button class="dock-item" data-tab="approve" id="navApprove">
+              <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+              <span>Approve</span>
+              <span class="dock-badge" id="badgeApprove">0</span>
+            </button>
+            <button class="dock-item" data-tab="replies" id="navReplies">
+              <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
+              <span>Replies</span>
+              <span class="dock-badge dock-badge-green" id="badgeReplies">0</span>
+            </button>
+            <button class="dock-item" data-tab="sent" id="navSent">
+              <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              <span>Sent</span>
+            </button>
+            <button class="dock-item" data-tab="crm" id="navCrm">
+              <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 7v10M12 7v10M16 7v10"/></svg>
+              <span>CRM</span>
+              <span class="dock-badge" id="badgeCrm" style="background:rgba(245,158,11,0.22);color:#fcd34d;border-color:rgba(245,158,11,0.4);">₹0</span>
+            </button>
+            <button class="dock-item" data-tab="sequences" id="navSequences">
+              <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Sequences</span>
+            </button>
+            <button class="dock-item" data-tab="whatsapp" id="navWhatsapp">
+              <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>WhatsApp</span>
+            </button>
+            <button class="dock-item" data-tab="setup" id="navSetup">
+              <svg class="dock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              <span>Setup</span>
+            </button>
+          </div>
+        </nav>
+        <div class="tcb-right">
+          <div class="tcb-live-indicator" style="cursor:pointer;" id="dbManageBtn" title="Open Database Inspector">
+            <span class="live-dot"></span>
+            <span id="dbCountPill">0</span> in DB
+          </div>
+          <div class="countdown-box">
+            <span>🌙</span>
+            <strong id="midnightCountdown">06:03:22</strong>
+          </div>
+          <button id="quickMidnightBtn" class="btn-dock-cta" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <span>Run Batch</span>
+          </button>
+          <button id="logoutBtn" class="btn-dock-cta" type="button" style="background:rgba(220,38,38,0.18);border-color:rgba(220,38,38,0.4);color:#fca5a5;margin-left:0.35rem;" title="Logout">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+            <span>Logout</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN APP BODY (full-width, no sidebar) -->
+    <div class="app-body">
+
+      <!-- ── CONTENT CONTAINER ── -->
+      <main class="content">
+
+        <!-- ═══════════════════════════════
+             1. DASHBOARD TAB
+             ═══════════════════════════════ -->
+        <section id="tabDashboard" class="tab active">
+          <div class="tab-header">
+            <div>
+              <h2>Command Dashboard</h2>
+              <p class="tab-sub" id="dashGreeting">Good evening, Swastik 👋 Automated lead engine active.</p>
+            </div>
+            <div style="display:flex;gap:0.75rem;align-items:center;">
+              <button type="button" class="btn btn-ghost btn-sm" onclick="window.restoreAllOriginalData()" style="border-color:rgba(212,175,55,0.4);color:#f4dda9;font-weight:700;" title="Restore all original draft leads, client inquiries, and statistics">
+                🔄 Restore All Data
+              </button>
+              <button class="btn btn-primary btn-sm" id="btnGoFindClients">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                <span>Find Clients</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- $10K KPI STATS GRID -->
+          <div class="stats-grid">
+            <div class="stat-card glass stat-gold">
+              <div class="stat-icon gold">🏢</div>
+              <div class="stat-info">
+                <span class="stat-label">Total Unique Leads</span>
+                <span class="stat-value" id="statFound">0</span>
+                <span class="stat-badge" style="color:#f4dda9">🛡️ Zero Duplicates</span>
+              </div>
+            </div>
+
+            <div class="stat-card glass stat-blue">
+              <div class="stat-icon blue">✍️</div>
+              <div class="stat-info">
+                <span class="stat-label">Pending Approval</span>
+                <span class="stat-value" id="statPending">0</span>
+                <span class="stat-badge" style="color:#38bdf8">⚡ Ready to send</span>
+              </div>
+            </div>
+
+            <div class="stat-card glass stat-emerald">
+              <div class="stat-icon emerald">📨</div>
+              <div class="stat-info">
+                <span class="stat-label">Emails Dispatched</span>
+                <span class="stat-value" id="statSent">0</span>
+                <span class="stat-badge">⚖️ 50/50 Balanced</span>
+              </div>
+            </div>
+
+            <div class="stat-card glass stat-cyan">
+              <div class="stat-icon cyan">💬</div>
+              <div class="stat-info">
+                <span class="stat-label">Client Replies</span>
+                <span class="stat-value" id="statReplies">0</span>
+                <span class="stat-badge" style="color:#22d3ee">🤖 AI Response Ready</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Multi-Sender Meter & Activity Layout -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
+
+            <!-- Dual-Sender Balanced Distribution Card -->
+            <div class="glass panel">
+              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;margin-bottom:1.25rem;">
+                <div>
+                  <h3 style="font-size:1.05rem;font-weight:800;color:#fff;">Multi-Sender Load Balancer (5 Accounts Equal Load)</h3>
+                  <p style="font-size:0.75rem;color:var(--text-muted);margin-top:0.15rem;">Automated Round-Robin • Individual 24h Rolling Quota Cycles</p>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.5rem;">
+                  <span id="fleetCycleSummaryBadge" class="status-pill active" style="font-size:0.7rem;font-family:monospace;">🟢 24h Timers Armed</span>
+                  <span class="status-pill active" style="font-size:0.7rem;">5-Way Equal Rotation</span>
+                </div>
+              </div>
+
+              <!-- Sender 1 -->
+              <div style="margin-bottom:0.85rem;background:rgba(255,255,255,0.02);padding:0.85rem;border-radius:var(--radius-sm);border:1px solid var(--border);">
+                <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.4rem;">
+                  <div style="display:flex;align-items:center;gap:0.6rem;flex:1;min-width:250px;">
+                    <div style="width:26px;height:26px;border-radius:7px;background:rgba(14, 165, 233,0.2);color:#7dd3fc;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.75rem;">S1</div>
+                    <div>
+                      <div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;">
+                        <span style="font-size:0.83rem;font-weight:700;color:#fff;" id="dashSender1">gagann33nn@gmail.com</span>
+                        <span id="accountTimer1" style="font-size:0.72rem;font-family:monospace;font-weight:700;padding:0.15rem 0.5rem;border-radius:6px;background:rgba(16,185,129,0.12);color:#34d399;border:1px solid rgba(16,185,129,0.3);">🟢 Ready (Starts on send)</span>
+                      </div>
+                      <div style="font-size:0.7rem;color:var(--text-dim);" id="subSender1">Slot 1 • 24h Rolling Cycle (Resets 24h after 1st send)</div>
+                    </div>
+                  </div>
+                  <div style="text-align:right;">
+                    <span style="font-size:0.8rem;font-weight:700;color:#7dd3fc;"><span id="quota1">0</span> / 450 sent</span>
+                    <div id="resetTimeSlot1" style="font-size:0.68rem;color:var(--text-dim);">Resets: 24h from 1st send</div>
+                  </div>
+                </div>
+                <div style="height:5px;background:rgba(255,255,255,0.06);border-radius:99px;overflow:hidden;">
+                  <div id="bar1" style="height:100%;width:0%;background:linear-gradient(90deg,#0ea5e9,#38bdf8);transition:width 0.3s ease;"></div>
+                </div>
+              </div>
+
+              <!-- Sender 2 -->
+              <div style="margin-bottom:0.85rem;background:rgba(255,255,255,0.02);padding:0.85rem;border-radius:var(--radius-sm);border:1px solid var(--border);">
+                <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.4rem;">
+                  <div style="display:flex;align-items:center;gap:0.6rem;flex:1;min-width:250px;">
+                    <div style="width:26px;height:26px;border-radius:7px;background:rgba(16,185,129,0.2);color:#6ee7b7;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.75rem;">S2</div>
+                    <div>
+                      <div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;">
+                        <span style="font-size:0.83rem;font-weight:700;color:#fff;" id="dashSender2">ig.swastik0@gmail.com</span>
+                        <span id="accountTimer2" style="font-size:0.72rem;font-family:monospace;font-weight:700;padding:0.15rem 0.5rem;border-radius:6px;background:rgba(16,185,129,0.12);color:#34d399;border:1px solid rgba(16,185,129,0.3);">🟢 Ready (Starts on send)</span>
+                      </div>
+                      <div style="font-size:0.7rem;color:var(--text-dim);" id="subSender2">Slot 2 • 24h Rolling Cycle (Resets 24h after 1st send)</div>
+                    </div>
+                  </div>
+                  <div style="text-align:right;">
+                    <span style="font-size:0.8rem;font-weight:700;color:#6ee7b7;"><span id="quota2">0</span> / 450 sent</span>
+                    <div id="resetTimeSlot2" style="font-size:0.68rem;color:var(--text-dim);">Resets: 24h from 1st send</div>
+                  </div>
+                </div>
+                <div style="height:5px;background:rgba(255,255,255,0.06);border-radius:99px;overflow:hidden;">
+                  <div id="bar2" style="height:100%;width:0%;background:linear-gradient(90deg,#10b981,#34d399);transition:width 0.3s ease;"></div>
+                </div>
+              </div>
+
+              <!-- Sender 3 -->
+              <div style="margin-bottom:0.85rem;background:rgba(255,255,255,0.02);padding:0.85rem;border-radius:var(--radius-sm);border:1px solid var(--border);">
+                <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.4rem;">
+                  <div style="display:flex;align-items:center;gap:0.6rem;flex:1;min-width:250px;">
+                    <div style="width:26px;height:26px;border-radius:7px;background:rgba(212,175,55,0.2);color:#f4dda9;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.75rem;">S3</div>
+                    <div>
+                      <div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;">
+                        <span style="font-size:0.83rem;font-weight:700;color:#fff;" id="dashSender3">ig.swastik0.1@gmail.com</span>
+                        <span id="accountTimer3" style="font-size:0.72rem;font-family:monospace;font-weight:700;padding:0.15rem 0.5rem;border-radius:6px;background:rgba(16,185,129,0.12);color:#34d399;border:1px solid rgba(16,185,129,0.3);">🟢 Ready (Starts on send)</span>
+                      </div>
+                      <div style="font-size:0.7rem;color:var(--text-dim);" id="subSender3">Slot 3 • 24h Rolling Cycle (Resets 24h after 1st send)</div>
+                    </div>
+                  </div>
+                  <div style="text-align:right;">
+                    <span style="font-size:0.8rem;font-weight:700;color:#f4dda9;"><span id="quota3">0</span> / 450 sent</span>
+                    <div id="resetTimeSlot3" style="font-size:0.68rem;color:var(--text-dim);">Resets: 24h from 1st send</div>
+                  </div>
+                </div>
+                <div style="height:5px;background:rgba(255,255,255,0.06);border-radius:99px;overflow:hidden;">
+                  <div id="bar3" style="height:100%;width:0%;background:linear-gradient(90deg,#d4af37,#fbbf24);transition:width 0.3s ease;"></div>
+                </div>
+              </div>
+
+              <!-- Sender 4 -->
+              <div style="margin-bottom:0.85rem;background:rgba(255,255,255,0.02);padding:0.85rem;border-radius:var(--radius-sm);border:1px solid var(--border);">
+                <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.4rem;">
+                  <div style="display:flex;align-items:center;gap:0.6rem;flex:1;min-width:250px;">
+                    <div style="width:26px;height:26px;border-radius:7px;background:rgba(168,85,247,0.2);color:#d8b4fe;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.75rem;">S4</div>
+                    <div>
+                      <div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;">
+                        <span style="font-size:0.83rem;font-weight:700;color:#fff;" id="dashSender4">ig.swastik0.02@gmail.com</span>
+                        <span id="accountTimer4" style="font-size:0.72rem;font-family:monospace;font-weight:700;padding:0.15rem 0.5rem;border-radius:6px;background:rgba(16,185,129,0.12);color:#34d399;border:1px solid rgba(16,185,129,0.3);">🟢 Ready (Starts on send)</span>
+                      </div>
+                      <div style="font-size:0.7rem;color:var(--text-dim);" id="subSender4">Slot 4 • 24h Rolling Cycle (Resets 24h after 1st send)</div>
+                    </div>
+                  </div>
+                  <div style="text-align:right;">
+                    <span style="font-size:0.8rem;font-weight:700;color:#d8b4fe;"><span id="quota4">0</span> / 450 sent</span>
+                    <div id="resetTimeSlot4" style="font-size:0.68rem;color:var(--text-dim);">Resets: 24h from 1st send</div>
+                  </div>
+                </div>
+                <div style="height:5px;background:rgba(255,255,255,0.06);border-radius:99px;overflow:hidden;">
+                  <div id="bar4" style="height:100%;width:0%;background:linear-gradient(90deg,#a855f7,#c084fc);transition:width 0.3s ease;"></div>
+                </div>
+              </div>
+
+              <!-- Sender 5 -->
+              <div style="background:rgba(255,255,255,0.02);padding:0.85rem;border-radius:var(--radius-sm);border:1px solid var(--border);">
+                <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.4rem;">
+                  <div style="display:flex;align-items:center;gap:0.6rem;flex:1;min-width:250px;">
+                    <div style="width:26px;height:26px;border-radius:7px;background:rgba(244,63,94,0.2);color:#fda4af;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.75rem;">S5</div>
+                    <div>
+                      <div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;">
+                        <span style="font-size:0.83rem;font-weight:700;color:#fff;" id="dashSender5">dhalamma769@gmail.com</span>
+                        <span id="accountTimer5" style="font-size:0.72rem;font-family:monospace;font-weight:700;padding:0.15rem 0.5rem;border-radius:6px;background:rgba(16,185,129,0.12);color:#34d399;border:1px solid rgba(16,185,129,0.3);">🟢 Ready (Starts on send)</span>
+                      </div>
+                      <div style="font-size:0.7rem;color:var(--text-dim);" id="subSender5">Slot 5 • 24h Rolling Cycle (Resets 24h after 1st send)</div>
+                    </div>
+                  </div>
+                  <div style="text-align:right;">
+                    <span style="font-size:0.8rem;font-weight:700;color:#fda4af;"><span id="quota5">0</span> / 450 sent</span>
+                    <div id="resetTimeSlot5" style="font-size:0.68rem;color:var(--text-dim);">Resets: 24h from 1st send</div>
+                  </div>
+                </div>
+                <div style="height:5px;background:rgba(255,255,255,0.06);border-radius:99px;overflow:hidden;">
+                  <div id="bar5" style="height:100%;width:0%;background:linear-gradient(90deg,#f43f5e,#fb7185);transition:width 0.3s ease;"></div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Real-Time Activity & WhatsApp Alerts Stream -->
+            <div class="glass panel">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;">
+                <h3 style="font-size:1.05rem;font-weight:800;color:#fff;">Real-Time Activity &amp; Telegram Logs</h3>
+                <span style="font-size:0.72rem;color:var(--text-dim);">Target: +91 9511347627</span>
+              </div>
+              <div id="recentActivity" style="display:flex;flex-direction:column;gap:0.75rem;max-height:280px;overflow-y:auto;">
+                <div style="font-size:0.82rem;color:var(--text-dim);text-align:center;padding:2rem;">No recent activities yet.</div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════
+             2. FIND CLIENTS TAB (GEO-HIERARCHY)
+             ═══════════════════════════════ -->
+        <section id="tabFindClients" class="tab" style="position:relative;">
+          <!-- Panel Lock Overlay during AI Batch Generation (BUG 2) -->
+          <div id="findClientLockOverlay" class="panel-lock-overlay hidden" aria-hidden="true">
+            <div class="lock-card glass-deep">
+              <div class="lock-icon">🔒</div>
+              <h4>AI Pitch Generation In Progress</h4>
+              <p>Crafting bespoke diagnostic outreach emails for discovered clients. Panel is locked to prevent duplicate requests.</p>
+            </div>
+          </div>
+
+          <div class="tab-header">
+            <div>
+              <h2>Global Lead Finder</h2>
+              <p class="tab-sub">Search targeted businesses across Continents, Countries, Regions & Cities with 100% Deduplication.</p>
+            </div>
+            <button class="btn btn-emerald btn-sm" id="btnScrape500Direct">
+              <span>🌙 Scrape & Draft 500 Clients Now</span>
+            </button>
+          </div>
+
+          <!-- 500-Lead Auto-Sweep Continent Banner with 1-Hour Auto-Default -->
+          <div class="glass panel" style="margin-bottom:1.25rem;border:1px solid rgba(14,165,233,0.3);background:linear-gradient(135deg,rgba(14,165,233,0.08),rgba(0,0,0,0.4));padding:0.9rem 1.25rem;border-radius:var(--radius-sm);">
+            <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;">
+              <div style="display:flex;align-items:center;gap:0.6rem;">
+                <span style="font-size:1.4rem;">🌍</span>
+                <div>
+                  <div style="font-size:0.9rem;font-weight:700;color:#fff;">
+                    Daily 500-Client Sweep Target: <span id="activeContinentBadge" style="color:#38bdf8;">🌐 Worldwide (Default Active)</span>
+                  </div>
+                  <div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.15rem;">
+                    Target continent for automated 500 searches. Auto-defaults to Worldwide if unselected in 1 hour: 
+                    <strong id="continentTimer" style="color:#f4dda9;font-family:monospace;font-size:0.82rem;">59:59</strong>
+                  </div>
+                </div>
+              </div>
+              <div style="display:flex;gap:0.4rem;flex-wrap:wrap;align-items:center;">
+                <span style="font-size:0.75rem;color:#94a3b8;font-weight:600;">Switch Target:</span>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.setSweepContinent('worldwide')" style="padding:0.25rem 0.55rem;font-size:0.75rem;border-color:rgba(56,189,248,0.4);color:#38bdf8;">🌐 Worldwide (Def)</button>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.setSweepContinent('asia')" style="padding:0.25rem 0.55rem;font-size:0.75rem;">🌏 Asia</button>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.setSweepContinent('europe')" style="padding:0.25rem 0.55rem;font-size:0.75rem;">🌍 Europe</button>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.setSweepContinent('north_america')" style="padding:0.25rem 0.55rem;font-size:0.75rem;">🌎 North America</button>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.setSweepContinent('middle_east')" style="padding:0.25rem 0.55rem;font-size:0.75rem;">🕌 Middle East</button>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.setSweepContinent('oceania')" style="padding:0.25rem 0.55rem;font-size:0.75rem;">🦘 Oceania</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="find-grid">
+            <!-- Search Filter Panel -->
+            <div class="glass panel">
+              <h3 style="font-size:1.05rem;font-weight:800;color:#fff;margin-bottom:1.25rem;">Target Geography</h3>
+
+              <!-- Continent Selector -->
+              <div class="field-group" style="margin-bottom:1rem;">
+                <label for="selectContinent">1. Select Continent</label>
+                <select id="selectContinent" class="field field-select">
+                  <option value="worldwide" selected>🌐 Worldwide (Global Tier 1 - Default)</option>
+                  <option value="asia">🌏 Asia</option>
+                  <option value="north_america">🌎 North America</option>
+                  <option value="europe">🌍 Europe</option>
+                  <option value="middle_east">🕌 Middle East</option>
+                  <option value="oceania">🦘 Oceania / Australia</option>
+                </select>
+              </div>
+
+              <!-- Country Selector -->
+              <div class="field-group" style="margin-bottom:1rem;">
+                <label for="selectCountry">2. Select Country</label>
+                <select id="selectCountry" class="field field-select">
+                  <!-- Dynamically populated -->
+                </select>
+                <div id="countryCurrencyPill" style="display:flex;align-items:center;gap:0.5rem;padding:0.45rem 0.75rem;background:rgba(14, 165, 233,0.12);border:1px solid rgba(14, 165, 233,0.25);border-radius:var(--radius-sm);margin-top:0.45rem;font-size:0.8rem;color:#bae6fd;">
+                  <span>🪙 Local Currency:</span>
+                  <strong id="countryCurrencyText" style="color:#fff;">₹ INR (Indian Rupee)</strong>
+                  <span style="color:var(--text-dim);font-size:0.72rem;margin-left:auto;">AI quotes & losses auto-converted</span>
+                </div>
+              </div>
+
+              <!-- State / Region & City (Optional) -->
+              <div class="geo-row" style="margin-bottom:1rem;">
+                <div class="field-group">
+                  <label for="inputRegion">State / Region <span style="font-size:0.72rem;color:#94a3b8;font-weight:400;">(Optional)</span></label>
+                  <input type="text" id="inputRegion" class="field" placeholder="Optional (leave empty for all)" value="" />
+                </div>
+                <div class="field-group">
+                  <label for="inputCity">City <span style="font-size:0.72rem;color:#94a3b8;font-weight:400;">(Optional)</span></label>
+                  <input type="text" id="inputCity" class="field" placeholder="Optional — leave blank for all over selection" value="" />
+                </div>
+              </div>
+
+              <!-- Business Category Chips -->
+              <div class="field-group" style="margin-bottom:1.25rem;">
+                <label>3. Business Category</label>
+                <div class="chips-container" id="typeChips">
+                  <button class="chip active" data-type="cafe">☕ Café</button>
+                  <button class="chip" data-type="restaurant">🍽️ Restaurant</button>
+                  <button class="chip" data-type="gym">💪 Gym / Fitness</button>
+                  <button class="chip" data-type="salon">💇 Salon</button>
+                  <button class="chip" data-type="spa">🧖 Spa & Wellness</button>
+                  <button class="chip" data-type="dentist">🦷 Dentist</button>
+                  <button class="chip" data-type="bar">🍺 Bar & Lounge</button>
+                  <button class="chip" data-type="hotel">🏨 Hotel & Resort</button>
+                  <button class="chip" data-type="bakery">🧁 Bakery</button>
+                  <button class="chip" data-type="pharmacy">💊 Pharmacy</button>
+                  <button class="chip" data-type="retail">🛍️ Retail Store</button>
+                  <button class="chip" data-type="lawyer">⚖️ Lawyer / Legal</button>
+                </div>
+              </div>
+
+              <!-- Website Need Filter -->
+              <div class="field-group" style="margin-bottom:1.25rem;">
+                <label>4. Need / Problem Filter</label>
+                <div class="chips-container" id="filterChips">
+                  <button class="chip chip-filter active" data-filter="all">All Needs</button>
+                  <button class="chip chip-filter" data-filter="no_website">🚫 No Website (Highest Need)</button>
+                  <button class="chip chip-filter" data-filter="outdated">⏳ Outdated Website</button>
+                </div>
+              </div>
+
+              <!-- Quantity Selector -->
+              <div class="field-group" style="margin-bottom:1.5rem;">
+                <label for="selectBatchSize">Lead Quantity</label>
+                <select id="selectBatchSize" class="field field-select">
+                  <option value="25">25 Businesses</option>
+                  <option value="50">50 Businesses (Split 25/25)</option>
+                  <option value="100">100 Businesses (Split 50/50)</option>
+                  <option value="250">250 Businesses (Split 125/125)</option>
+                  <option value="500" selected>500 Businesses (Full Midnight Size)</option>
+                </select>
+              </div>
+
+              <!-- Search Button -->
+              <button id="searchBtn" class="btn btn-primary btn-full" style="padding:0.85rem;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                <span>Find & Analyze Prospective Clients</span>
+              </button>
+
+              <div style="margin-top:1rem;display:flex;align-items:center;gap:0.5rem;font-size:0.75rem;color:var(--text-dim);">
+                <span style="color:var(--emerald);">🛡️</span> SwastikEnterpriseDB will verify each lead to guarantee zero duplicate emails.
+              </div>
+            </div>
+
+            <!-- Results View -->
+            <div class="glass panel" style="min-height:500px;">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;border-bottom:1px solid var(--border);padding-bottom:1rem;">
+                <div>
+                  <h3 style="font-size:1.05rem;font-weight:800;color:#fff;">
+                    Discovered Businesses <span class="badge" id="foundCount">0</span>
+                  </h3>
+                  <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.2rem;">Every business is analyzed for specific vulnerabilities and opportunities.</p>
+                </div>
+                <button id="generateAllBtn" class="btn btn-emerald btn-sm" style="display:none;">
+                  <span>✨ Generate AI Outreach Emails for All</span>
+                </button>
+              </div>
+
+              <div id="businessList" style="display:flex;flex-direction:column;gap:1rem;">
+                <div style="text-align:center;padding:4rem 2rem;color:var(--text-dim);">
+                  <div style="font-size:2.5rem;margin-bottom:0.75rem;">🔍</div>
+                  <h4 style="color:#fff;font-size:1rem;margin-bottom:0.25rem;">No Searches Executed Yet</h4>
+                  <p style="font-size:0.85rem;">Select your continent, country and business category on the left, then click "Find & Analyze".</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════
+             3. APPROVE EMAILS TAB (50/50 SPLIT ENGINE)
+             ═══════════════════════════════ -->
+        <section id="tabApprove" class="tab">
+          <div class="tab-header">
+            <div>
+              <h2>Approve Outreach Emails</h2>
+              <p class="tab-sub">Review AI-crafted problem-focused emails. Balanced 50/50 across sender accounts on approval.</p>
+            </div>
+            <div style="display:flex;gap:0.75rem;align-items:center;flex-wrap:wrap;">
+              <div class="status-pill active" style="font-size:0.8rem;background:rgba(212,175,55,0.15);border-color:rgba(212,175,55,0.4);color:#f4dda9;padding:0.4rem 0.75rem;">
+                <span>📬 Google Daily Limit: <strong id="quotaTotalSent">0</strong>/<span id="fleetTotalCapacity">2,250</span> Sent (<strong id="quotaRemaining" style="color:#6ee7b7;">2,250</strong> remaining across 5 accounts)</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:0.4rem;background:rgba(0,0,0,0.3);padding:0.2rem 0.6rem;border-radius:var(--radius-sm);border:1px solid rgba(255,255,255,0.08);">
+                <label for="sendQuantitySelect" style="font-size:0.75rem;color:#94a3b8;font-weight:600;">Qty:</label>
+                <select id="sendQuantitySelect" style="background:rgba(15,23,42,0.85);border:1px solid rgba(16,185,129,0.4);border-radius:6px;padding:0.3rem 0.55rem;color:#6ee7b7;font-size:0.78rem;outline:none;cursor:pointer;font-weight:700;">
+                  <option value="all" selected>All Pending</option>
+                  <option value="25">25 Emails</option>
+                  <option value="50">50 Emails</option>
+                  <option value="100">100 Emails</option>
+                  <option value="250">250 Emails</option>
+                  <option value="500">500 Emails</option>
+                  <option value="1000">1,000 Emails</option>
+                </select>
+              </div>
+              <button id="btnSendAllSafe1Click" class="btn btn-primary" onclick="window.sendAllSafe1Click()" style="background:linear-gradient(135deg,#10b981,#059669);color:#fff;font-weight:800;border:none;box-shadow:0 3px 12px rgba(16,185,129,0.4);padding:0.45rem 1rem;">
+                ⚡ Send All (1-Click Safe Dispatch)
+              </button>
+              <div id="sendProgressPill" class="hidden" style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(16,185,129,0.18);border:1px solid rgba(16,185,129,0.45);padding:0.4rem 0.85rem;border-radius:99px;font-size:0.8rem;color:#6ee7b7;font-weight:700;">
+                <span class="live-dot" style="background:#10b981;"></span>
+                <span>🚀 Dispatched: <strong id="sendProgressCurrent" style="color:#fff;">0</strong> / <strong id="sendProgressTotal" style="color:#f4dda9;">0</strong> (<span id="sendProgressPercent">0%</span>)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ─── DYNAMIC COUNTRY PRICING MATRIX ─── -->
+          <div id="countryPricingMatrix"></div>
+
+          <!-- Dynamic Multi-Sender Load Balancing Visual Banner -->
+          <div class="split-banner" id="splitBanner">
+            <div class="split-details">
+              <div class="split-title">
+                <span>⚖️ Multi-Sender Load Balancing Engine Active</span>
+              </div>
+              <div class="split-sub" id="splitSummaryText">
+                Dividing pending emails equally between your active sender accounts to protect domain reputation.
+              </div>
+            </div>
+            <div class="split-meters">
+              <div class="split-meter-box">
+                <span class="split-badge acc1" id="splitBadge1">Sender 1: 0 drafts</span>
+              </div>
+              <span style="color:var(--text-dim)">+</span>
+              <div class="split-meter-box">
+                <span class="split-badge acc2" id="splitBadge2">Sender 2: 0 drafts</span>
+              </div>
+              <span style="color:var(--text-dim)">+</span>
+              <div class="split-meter-box">
+                <span class="split-badge acc3" id="splitBadge3" style="border-color:rgba(212,175,55,0.4);color:#f4dda9;">Sender 3: 0 drafts</span>
+              </div>
+              <span style="color:var(--text-dim)">+</span>
+              <div class="split-meter-box">
+                <span class="split-badge acc4" id="splitBadge4" style="border-color:rgba(56,189,248,0.4);color:#bae6fd;">Sender 4: 0 drafts</span>
+              </div>
+              <span style="color:var(--text-dim)">+</span>
+              <div class="split-meter-box">
+                <span class="split-badge acc5" id="splitBadge5" style="border-color:rgba(192,132,252,0.4);color:#e9d5ff;">Sender 5: 0 drafts</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filter Sub-bar -->
+          <!-- 🎛️ APPROVE TAB SMART SORT & FILTER BAR -->
+          <div class="glass panel" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;gap:0.75rem;flex-wrap:wrap;padding:0.75rem 1.25rem;border:1px solid rgba(255,255,255,0.09);border-radius:var(--radius-sm);background:rgba(0,0,0,0.35);">
+            <!-- Filter Chips (Sender & Status) -->
+            <div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;">
+              <span style="font-size:0.78rem;font-weight:700;color:#94a3b8;display:inline-flex;align-items:center;gap:0.3rem;">
+                <span>🔍 Filter:</span>
+              </span>
+              <div class="chips-container" id="approveFilterChips" style="margin:0;">
+                <button class="chip active" data-filter="pending">🆕 Needs to Send (<span id="countFilterPending">0</span>)</button>
+                <button class="chip" data-filter="sent">📤 Already Sent (<span id="countFilterSent">0</span>)</button>
+                <button class="chip" data-filter="all">All Records (<span id="countFilterAll">0</span>)</button>
+                <button class="chip" data-filter="s1">Sender 1</button>
+                <button class="chip" data-filter="s2">Sender 2</button>
+                <button class="chip" data-filter="s3">Sender 3</button>
+                <button class="chip" data-filter="cafe">☕ Cafes</button>
+                <button class="chip" data-filter="gym">💪 Gyms</button>
+                <button class="chip" data-filter="salon">✂️ Salons</button>
+              </div>
+            </div>
+
+            <!-- Sort By Selector -->
+            <div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;">
+              <span style="font-size:0.78rem;font-weight:700;color:#94a3b8;display:inline-flex;align-items:center;gap:0.3rem;">
+                <span>⚡ Sort:</span>
+              </span>
+              <select id="approveSortSelect" onchange="window.setApproveSort(this.value)" style="background:rgba(15,23,42,0.8);border:1px solid rgba(212,175,55,0.35);border-radius:6px;padding:0.3rem 0.65rem;color:#f4dda9;font-size:0.8rem;outline:none;cursor:pointer;">
+                <option value="newest">🕒 Newest Created</option>
+                <option value="oldest">⏳ Oldest First</option>
+                <option value="name_asc">🔤 Business Name (A-Z)</option>
+                <option value="name_desc">🔤 Business Name (Z-A)</option>
+                <option value="sender">📤 Sender ID (S1 / S2)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Drafts List Container -->
+          <div id="approveList" class="email-list">
+            <div style="text-align:center;padding:4rem 2rem;color:var(--text-dim);">
+              <div style="font-size:2.5rem;margin-bottom:0.75rem;">📭</div>
+              <h4 style="color:#fff;font-size:1rem;margin-bottom:0.25rem;">No Pending Emails for Approval</h4>
+              <p style="font-size:0.85rem;">Run the Midnight 500-Batch or find clients to generate AI outreach emails.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════
+             4. REPLIES TAB
+             ═══════════════════════════════ -->
+        <section id="tabReplies" class="tab">
+          <div class="tab-header" style="align-items:center;">
+            <div>
+              <h2>Client Responses & AI Follow-ups</h2>
+              <p class="tab-sub">Incoming prospect inquiries with instant AI-tailored proposals and closing responses.</p>
+            </div>
+            <div style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;">
+              <button type="button" class="btn btn-primary btn-sm" onclick="window.restoreRealClientReplies()" style="background:linear-gradient(135deg,#d4af37,#b38e28);color:#000;font-weight:800;border:none;padding:0.35rem 0.85rem;box-shadow:0 2px 8px rgba(212,175,55,0.4);" title="Restore all authentic client email inquiries and proposals">
+                🔄 Restore Real Client Replies
+              </button>
+              <button type="button" class="btn btn-emerald btn-sm" onclick="window.receiveInboundClientReply()">
+                📲 Simulate Inbound Reply
+              </button>
+              <button type="button" class="btn btn-danger btn-sm" onclick="window.clearAllSimulatedReplies1Click()" style="background:#dc2626;color:#fff;font-weight:700;border:none;padding:0.35rem 0.85rem;box-shadow:0 2px 8px rgba(220,38,38,0.4);" title="Delete all simulated emails in one click">
+                🗑️ Delete Simulated
+              </button>
+              <button type="button" class="btn btn-ghost btn-sm" onclick="window.autoFixAllReplyEmails()" style="border-color:rgba(212,175,55,0.4);color:#f4dda9;" title="Convert all replies to 100% deliverable @gmail.com">
+                ⚡ Fix All to @gmail.com
+              </button>
+              <button type="button" class="btn btn-primary btn-sm" onclick="window.sendAllReplyEmails1Click(); if(typeof window.setReplyFilter==='function') window.setReplyFilter('replied');" style="background:linear-gradient(135deg,#10b981,#059669);color:#fff;font-weight:800;border:none;padding:0.35rem 0.85rem;box-shadow:0 3px 12px rgba(16,185,129,0.4);" title="Send all pending client reply emails in 1 click">
+                ⚡ Send All Replies (1-Click)
+              </button>
+            </div>
+          </div>
+          
+          <!-- 🤖 GLOBAL AI COMMAND CENTER FOR ALL REPLIES -->
+          <div class="glass panel" style="margin-bottom:1rem;border:1px solid rgba(212,175,55,0.35);background:linear-gradient(135deg,rgba(212,175,55,0.08),rgba(0,0,0,0.4));padding:0.85rem 1.25rem;border-radius:var(--radius-sm);">
+            <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.6rem;margin-bottom:0.65rem;">
+              <div style="display:flex;align-items:center;gap:0.5rem;">
+                <span style="font-size:1.3rem;">⚡</span>
+                <div>
+                  <h4 style="font-size:0.92rem;font-weight:800;color:#fff;margin:0;">Global AI Reply Command Center</h4>
+                  <p style="font-size:0.75rem;color:var(--text-muted);margin:0.15rem 0 0 0;">Type any command to change delivery timeframe (5-7 days), pricing, discounts, or terms across ALL client replies instantly.</p>
+                </div>
+              </div>
+              <div style="display:flex;gap:0.35rem;flex-wrap:wrap;">
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.applyQuickReplyPreset('Set delivery period to 5-7 business days with zero downtime')" style="padding:0.2rem 0.5rem;font-size:0.72rem;border-color:rgba(212,175,55,0.3);color:#f4dda9;">⏱️ 5-7 Days Delivery</button>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.applyQuickReplyPreset('Offer 10% fast-action discount if confirmed this week')" style="padding:0.2rem 0.5rem;font-size:0.72rem;border-color:rgba(212,175,55,0.3);color:#f4dda9;">🏷️ 10% Discount</button>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.applyQuickReplyPreset('Suggest a 5-minute WhatsApp call today')" style="padding:0.2rem 0.5rem;font-size:0.72rem;border-color:rgba(212,175,55,0.3);color:#f4dda9;">📞 Push 5-Min WhatsApp Call</button>
+              </div>
+            </div>
+            <div style="display:flex;gap:0.5rem;align-items:center;">
+              <input 
+                type="text" 
+                id="globalReplyCommandInput" 
+                class="field" 
+                style="flex:1;background:rgba(0,0,0,0.3);border:1px solid rgba(212,175,55,0.3);padding:0.45rem 0.85rem;color:#fff;font-size:0.85rem;border-radius:var(--radius-xs);" 
+                placeholder="Give command (e.g. 'Set delivery period to 5-7 business days', 'Add free logo & SSL', etc.)" 
+                onkeydown="if(event.key==='Enter') window.applyGlobalReplyCommand()"
+              />
+              <button type="button" class="btn btn-primary btn-sm" onclick="window.applyGlobalReplyCommand()" style="background:linear-gradient(135deg,#d4af37,#b38e28);color:#000;font-weight:700;white-space:nowrap;padding:0.45rem 1rem;">
+                ✨ Apply to All Replies
+              </button>
+            </div>
+          </div>
+
+          <!-- 🌍 CLIENT COUNTRY & CURRENCY SELECTOR BAR -->
+          <div class="glass panel" style="margin-bottom:1.25rem;border:1px solid rgba(14,165,233,0.3);background:linear-gradient(135deg,rgba(14,165,233,0.06),rgba(0,0,0,0.35));padding:0.75rem 1.25rem;border-radius:var(--radius-sm);">
+            <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.6rem;">
+              <div style="display:flex;align-items:center;gap:0.5rem;">
+                <span style="font-size:1.2rem;">🪙</span>
+                <span style="font-size:0.84rem;font-weight:700;color:#fff;">Client Country Currency:</span>
+                <span id="activeReplyCurrencyBadge" style="font-size:0.78rem;color:#38bdf8;font-weight:700;background:rgba(14,165,233,0.15);padding:0.15rem 0.5rem;border-radius:4px;border:1px solid rgba(14,165,233,0.3);">
+                  🇮🇳 India (₹ INR)
+                </span>
+              </div>
+              <div style="display:flex;gap:0.35rem;flex-wrap:wrap;align-items:center;">
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.setReplyCountryCurrency('IN', '₹', 'INR', 12500)" style="padding:0.2rem 0.5rem;font-size:0.75rem;">🇮🇳 ₹12,500 INR</button>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.setReplyCountryCurrency('US', '$', 'USD', 149)" style="padding:0.2rem 0.5rem;font-size:0.75rem;">🇺🇸 $149 USD</button>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.setReplyCountryCurrency('GB', '£', 'GBP', 119)" style="padding:0.2rem 0.5rem;font-size:0.75rem;">🇬🇧 £119 GBP</button>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.setReplyCountryCurrency('EU', '€', 'EUR', 139)" style="padding:0.2rem 0.5rem;font-size:0.75rem;">🇪🇺 €139 EUR</button>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.setReplyCountryCurrency('AE', 'AED ', 'AED', 550)" style="padding:0.2rem 0.5rem;font-size:0.75rem;">🇦🇪 AED 550</button>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.setReplyCountryCurrency('SG', 'S$', 'SGD', 199)" style="padding:0.2rem 0.5rem;font-size:0.75rem;">🇸🇬 S$199 SGD</button>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.setReplyCountryCurrency('AU', 'A$', 'AUD', 229)" style="padding:0.2rem 0.5rem;font-size:0.75rem;">🇦🇺 A$229 AUD</button>
+                <button type="button" class="btn btn-ghost btn-sm" onclick="window.setReplyCountryCurrency('CA', 'C$', 'CAD', 199)" style="padding:0.2rem 0.5rem;font-size:0.75rem;">🇨🇦 C$199 CAD</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEND ALL CLIENT EMAIL REPLIES 1-CLICK ACTION BAR -->
+          <div class="glass panel" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1.25rem;padding:0.85rem 1.25rem;background:linear-gradient(135deg,rgba(16,185,129,0.1),rgba(0,0,0,0.4));border:1px solid rgba(16,185,129,0.4);border-radius:var(--radius-sm);">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <span style="font-size:1.5rem;">⚡</span>
+              <div>
+                <h4 style="margin:0;font-size:0.95rem;font-weight:800;color:#fff;">1-Click Send All Reply Emails</h4>
+                <p style="margin:0.2rem 0 0;font-size:0.78rem;color:var(--text-muted);">
+                  Instantly verify deliverability (@gmail.com) and dispatch every waiting client reply in 1 click. Zero bounce, 100% deliverable.
+                </p>
+              </div>
+            </div>
+            <button id="btnSendAllReplies1Click" class="btn btn-primary" onclick="window.sendAllReplyEmails1Click(); if(typeof window.setReplyFilter==='function') window.setReplyFilter('replied');" style="background:linear-gradient(135deg,#10b981,#059669);color:#fff;font-weight:800;border:none;box-shadow:0 3px 12px rgba(16,185,129,0.45);padding:0.55rem 1.25rem;font-size:0.9rem;display:inline-flex;align-items:center;gap:0.5rem;">
+              <span>🚀 Send All Replies (1-Click)</span>
+            </button>
+          </div>
+
+          <!-- 🎛️ REPLIES TAB SMART SORT & FILTER BAR -->
+          <div class="glass panel" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;gap:0.75rem;flex-wrap:wrap;padding:0.75rem 1.25rem;border:1px solid rgba(212,175,55,0.25);border-radius:var(--radius-sm);background:rgba(0,0,0,0.35);">
+            <!-- Status & Category Filters -->
+            <div style="display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap;">
+              <span style="font-size:0.78rem;font-weight:700;color:#94a3b8;display:inline-flex;align-items:center;gap:0.3rem;">
+                <span>🔍 Filter:</span>
+              </span>
+              <div class="chips-container" id="replyFilterChips" style="margin:0;">
+                <button class="chip" data-filter="needs_reply" onclick="window.setReplyFilter('needs_reply')" id="chipNeedsReply">🆕 Reply Send Email (<span id="countReplyNeeds">0</span>)</button>
+                <button class="chip active" data-filter="replied" onclick="window.setReplyFilter('replied')" id="chipReplied">📤 Reply Sended (<span id="countReplyDispatched">0</span>)</button>
+                <button class="chip" data-filter="ongoing" onclick="window.setReplyFilter('ongoing')">💬 Ongoing Conversations (<span id="countReplyOngoing">0</span>)</button>
+                <button class="chip" data-filter="all" onclick="window.setReplyFilter('all')">All Inquiries (<span id="countReplyAll">0</span>)</button>
+                <button class="chip" data-filter="cafe" onclick="window.setReplyFilter('cafe')">☕ Cafes</button>
+                <button class="chip" data-filter="gym" onclick="window.setReplyFilter('gym')">💪 Gyms</button>
+                <button class="chip" data-filter="salon" onclick="window.setReplyFilter('salon')">✂️ Salons</button>
+                <button class="chip" data-filter="clinic" onclick="window.setReplyFilter('clinic')">🩺 Clinics</button>
+              </div>
+            </div>
+
+            <!-- Search & Sort Selectors -->
+            <div style="display:flex;align-items:center;gap:0.6rem;flex-wrap:wrap;">
+              <div style="display:inline-flex;align-items:center;position:relative;">
+                <input 
+                  type="text" 
+                  id="replySearchInput" 
+                  placeholder="🔍 Search client messages…" 
+                  oninput="window.filterRepliesBySearch(this.value)" 
+                  style="background:rgba(15,23,42,0.85);border:1px solid rgba(212,175,55,0.3);border-radius:6px;padding:0.35rem 0.65rem;color:#f3f4f6;font-size:0.78rem;outline:none;min-width:180px;" 
+                />
+              </div>
+              <div style="display:inline-flex;align-items:center;gap:0.3rem;">
+                <span style="font-size:0.78rem;font-weight:700;color:#94a3b8;">⚡ Sort:</span>
+                <select id="replySortSelect" onchange="window.setReplySort(this.value)" style="background:rgba(15,23,42,0.8);border:1px solid rgba(212,175,55,0.35);border-radius:6px;padding:0.3rem 0.65rem;color:#f4dda9;font-size:0.8rem;outline:none;cursor:pointer;">
+                  <option value="newest">🕒 Most Recent Inquiry</option>
+                  <option value="oldest">⏳ Oldest Inquiries</option>
+                  <option value="name_asc">🔤 Client Name (A-Z)</option>
+                  <option value="name_desc">🔤 Client Name (Z-A)</option>
+                  <option value="status">📌 Needs Reply First</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- CLIENT REPLIES CARDS CONTAINER -->
+          <div id="repliesList" class="email-list">
+            <div style="text-align:center;padding:4rem 2rem;color:var(--text-dim);">
+              <div style="font-size:2.5rem;margin-bottom:0.75rem;">💬</div>
+              <h4 style="color:#fff;font-size:1rem;margin-bottom:0.25rem;">No Client Inquiries Yet</h4>
+              <p style="font-size:0.85rem;">Client replies will appear here with instant AI-drafted booking responses.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════
+             5. SENT TAB
+             ═══════════════════════════════ -->
+        <section id="tabSent" class="tab">          <div class="tab-header">
+            <div>
+              <h2>Sent History & Permanent Suppression List</h2>
+              <p class="tab-sub">All dispatched outreach emails. All contacted domains are permanently locked to prevent duplicate outreach.</p>
+            </div>
+            <button class="btn btn-ghost btn-sm" id="btnExportSentCSV">
+              <span>📥 Export Sent to CSV</span>
+            </button>
+          </div>
+          <div id="sentList" class="email-list">
+            <div style="text-align:center;padding:4rem 2rem;color:var(--text-dim);">
+              <div style="font-size:2.5rem;margin-bottom:0.75rem;">📤</div>
+              <h4 style="color:#fff;font-size:1rem;margin-bottom:0.25rem;">No Emails Dispatched Yet</h4>
+              <p style="font-size:0.85rem;">Approved emails will be recorded here with delivery timestamps and sender account tags.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════
+             5b. DEAL PIPELINE CRM (KANBAN)
+             ═══════════════════════════════ -->
+        <section id="tabCrm" class="tab">
+          <div class="tab-header">
+            <div>
+              <h2>Executive Deal Pipeline & CRM</h2>
+              <p class="tab-sub">Track high-value prospects from first contact to closed website contract.</p>
+            </div>
+            <div style="display:flex;gap:0.75rem;align-items:center;">
+              <div class="status-pill active" style="font-size:0.8rem;background:rgba(16,185,129,0.15);border-color:rgba(16,185,129,0.4);color:#6ee7b7;">
+                <span>💰 Won Revenue: <strong id="crmWonRevenue">₹0</strong></span>
+              </div>
+              <div class="status-pill" style="font-size:0.8rem;">
+                <span>Total Pipeline: <strong id="crmTotalPipeline">₹0</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kanban Board Grid -->
+          <div class="kanban-board" id="crmKanbanBoard">
+            <!-- Stage 1: Dispatched -->
+            <div class="kanban-column">
+              <div class="kanban-col-header">
+                <span class="kanban-col-title">📨 Dispatched</span>
+                <span class="kanban-col-count" id="countDispatched">0</span>
+              </div>
+              <div class="kanban-cards" id="colDispatched"></div>
+            </div>
+
+            <!-- Stage 2: Opened / Engaged -->
+            <div class="kanban-column">
+              <div class="kanban-col-header">
+                <span class="kanban-col-title">👁️ Opened & Clicked</span>
+                <span class="kanban-col-count" id="countOpened">0</span>
+              </div>
+              <div class="kanban-cards" id="colOpened"></div>
+            </div>
+
+            <!-- Stage 3: In Discussion / Replied -->
+            <div class="kanban-column">
+              <div class="kanban-col-header">
+                <span class="kanban-col-title">💬 Negotiation</span>
+                <span class="kanban-col-count" id="countReplied">0</span>
+              </div>
+              <div class="kanban-cards" id="colReplied"></div>
+            </div>
+
+            <!-- Stage 4: Closed / Won -->
+            <div class="kanban-column kanban-won-col">
+              <div class="kanban-col-header">
+                <span class="kanban-col-title">🎉 Won / Closed ($)</span>
+                <span class="kanban-col-count" id="countWon">0</span>
+              </div>
+              <div class="kanban-cards" id="colWon"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════
+             5c. 3-STEP FOLLOW-UP SEQUENCES
+             ═══════════════════════════════ -->
+        <section id="tabSequences" class="tab">
+          <div class="tab-header" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+            <div>
+              <h2>7-Day Value Follow-Up Sequence (Sunday Drip)</h2>
+              <p class="tab-sub">Automated 7-day drip sent on Sundays with 1-click approval. Guarantees past clients are never re-contacted as new prospects.</p>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;">
+              <button type="button" class="btn btn-primary btn-sm" id="btnSendAllSequences" onclick="window.swastikFollowUp && window.swastikFollowUp.sendAllPendingSequences()" style="background:linear-gradient(135deg,#6366f1,#4f46e5);color:#fff;font-weight:800;border:none;box-shadow:0 4px 14px rgba(99,102,241,0.4);display:inline-flex;align-items:center;gap:0.5rem;padding:0.6rem 1.25rem;">
+                <span>⚡ Approve & Send All Sequences (1-Click Safe Dispatch)</span>
+              </button>
+              <div class="status-pill active" style="font-size:0.75rem;">
+                <span>⚡ Active Sequences: <strong id="seqActiveCount">0</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 340px;gap:1.5rem;">
+            <!-- Sequence List -->
+            <div id="sequenceList" class="email-list">
+              <div style="text-align:center;padding:4rem 2rem;color:var(--text-dim);">
+                <div style="font-size:2.5rem;margin-bottom:0.75rem;">⏳</div>
+                <h4 style="color:#fff;font-size:1rem;margin-bottom:0.25rem;">No Active Drip Sequences</h4>
+                <p style="font-size:0.85rem;">Approve and send outreach emails to automatically enroll prospects into 7-day value follow-ups.</p>
+              </div>
+            </div>
+
+            <!-- Sequence Architecture Info -->
+            <div class="glass panel">
+              <h3 style="font-size:1.05rem;font-weight:800;color:#fff;margin-bottom:1.25rem;">Drip Architecture</h3>
+              
+              <div style="display:flex;flex-direction:column;gap:1rem;">
+                <div style="padding:0.85rem;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:var(--radius-sm);">
+                  <div style="font-size:0.85rem;font-weight:700;color:#7dd3fc;margin-bottom:0.25rem;">Step 1: Day 1 (Sent ✓)</div>
+                  <p style="font-size:0.78rem;color:var(--text-muted);line-height:1.4;">Initial bespoke pitch highlighting revenue opportunities and mobile booking readiness.</p>
+                </div>
+
+                <div style="padding:0.85rem;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:var(--radius-sm);">
+                  <div style="font-size:0.85rem;font-weight:700;color:#6ee7b7;margin-bottom:0.25rem;">Step 2: Day 7 (Sunday Follow-Up)</div>
+                  <p style="font-size:0.78rem;color:var(--text-muted);line-height:1.4;">Weekly re-engagement delivering interactive mockup preview link with your 1-click approval.</p>
+                </div>
+
+                <div style="padding:0.85rem;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:var(--radius-sm);">
+                  <div style="font-size:0.85rem;font-weight:700;color:#fcd34d;margin-bottom:0.25rem;">Step 3: Day 14 (Final Courteous Check)</div>
+                  <p style="font-size:0.78rem;color:var(--text-muted);line-height:1.4;">Polite check-in confirming if concept should be archived or kept on hold.</p>
+                </div>
+
+                <div style="padding:0.75rem;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);border-radius:var(--radius-sm);font-size:0.75rem;color:#a7f3d0;display:flex;align-items:center;gap:0.4rem;">
+                  <span>🛡️</span> Sequence automatically halts the exact second a client replies!
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════
+             6. WHATSAPP BOT TAB
+             ═══════════════════════════════ -->
+        <section id="tabWhatsapp" class="tab">
+          <div class="tab-header">
+            <div>
+              <h2>WhatsApp Alert Center</h2>
+              <p class="tab-sub">Real-time alerts dispatched directly to your personal WhatsApp: +91 9511347627</p>
+            </div>
+            <button class="btn btn-emerald btn-sm" id="btnTestWhatsApp">
+              <span>📲 Send Test Ping to 9511347627</span>
+            </button>
+          </div>
+
+          <div style="display:grid;grid-template-columns:360px 1fr;gap:1.5rem;">
+            <!-- Configuration Box -->
+            <div class="glass panel">
+              <h3 style="font-size:1.05rem;font-weight:800;color:#fff;margin-bottom:1.25rem;">Alert Preferences</h3>
+
+              <div class="field-group" style="margin-bottom:1rem;">
+                <label for="waPhoneInput">Your WhatsApp Number</label>
+                <input type="text" id="waPhoneInput" class="field" value="9511347627" placeholder="9511347627" />
+                <span style="font-size:0.75rem;color:var(--text-dim);">Default country code +91 (India) auto-applied.</span>
+              </div>
+
+              <div class="field-group" style="margin-bottom:1rem;">
+                <label for="callmebotKeyInput">CallMeBot API Key (Free Personal Bot)</label>
+                <input type="password" id="callmebotKeyInput" class="field" placeholder="Enter CallMeBot API Key (optional)" />
+                <span style="font-size:0.75rem;color:var(--text-dim);">To receive direct WhatsApp messages: send "I allow callmebot to send me messages" to +34 941 01 99 62 on WhatsApp to get instant free key.</span>
+              </div>
+
+              <div class="field-group" style="margin-bottom:1.25rem;">
+                <label for="waWebhookInput">Custom Webhook / Green-API URL (Optional)</label>
+                <input type="url" id="waWebhookInput" class="field" placeholder="https://api.green-api.com/waInstance..." />
+              </div>
+
+              <div style="display:flex;flex-direction:column;gap:0.75rem;margin-bottom:1.5rem;">
+                <label style="display:flex;align-items:center;gap:0.5rem;font-size:0.85rem;cursor:pointer;">
+                  <input type="checkbox" id="chkAlertMidnight" checked />
+                  <span>Alert on Midnight 500-Batch Complete</span>
+                </label>
+                <label style="display:flex;align-items:center;gap:0.5rem;font-size:0.85rem;cursor:pointer;">
+                  <input type="checkbox" id="chkAlertApproval" checked />
+                  <span>Alert on Approval & 50/50 Split Dispatch</span>
+                </label>
+                <label style="display:flex;align-items:center;gap:0.5rem;font-size:0.85rem;cursor:pointer;">
+                  <input type="checkbox" id="chkAlertReplies" checked />
+                  <span>Alert immediately on Client Inquiries</span>
+                </label>
+              </div>
+
+              <button class="btn btn-primary btn-full" id="btnSaveWhatsAppSettings">
+                <span>Save WhatsApp Settings</span>
+              </button>
+            </div>
+
+            <!-- WhatsApp Message Activity Feed -->
+            <div class="glass panel">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;">
+                <h3 style="font-size:1.05rem;font-weight:800;color:#fff;">Recent Alerts & Prospect Open Tracking</h3>
+                <span class="status-pill active" style="font-size:0.7rem;">Live Pixel Tracking Active</span>
+              </div>
+              <div id="waLogsList" style="display:flex;flex-direction:column;gap:0.85rem;max-height:420px;overflow-y:auto;">
+                <div style="text-align:center;padding:3rem;color:var(--text-dim);">No alerts dispatched yet. Click "Send Test Ping" above!</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Auto-Closing Bot Simulator for WhatsApp -->
+          <div class="glass panel" style="margin-top:1.5rem;">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;">
+              <div>
+                <h3 style="font-size:1.05rem;font-weight:800;color:#fff;">🤖 WhatsApp 24/7 AI Sales Closer</h3>
+                <p style="font-size:0.82rem;color:var(--text-muted);margin-top:0.25rem;">Select common client inquiries to generate instant, conversion-tested closing responses ready to paste or auto-send.</p>
+              </div>
+              <span class="status-pill active" style="font-size:0.7rem;">Trained on High-Ticket Closing Scripts</span>
+            </div>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;">
+              <div>
+                <label style="font-size:0.8rem;font-weight:700;color:var(--text-dim);text-transform:uppercase;">Select Client Objection / Question:</label>
+                <div class="chips-container" id="closerPromptChips" style="margin-top:0.5rem;">
+                  <button class="chip active" data-inquiry="pricing">💰 "How much do you charge?"</button>
+                  <button class="chip" data-inquiry="timeline">⚡ "How fast can you build it?"</button>
+                  <button class="chip" data-inquiry="portfolio">🌐 "Can I see your past work?"</button>
+                  <button class="chip" data-inquiry="book_call">📞 "Let's schedule a call"</button>
+                  <button class="chip" data-inquiry="objection_not_interested">🙅 "Not interested right now"</button>
+                </div>
+              </div>
+
+              <div>
+                <label style="font-size:0.8rem;font-weight:700;color:var(--text-dim);text-transform:uppercase;">AI Formulated WhatsApp Reply:</label>
+                <div id="closerResponseBox" style="margin-top:0.5rem;background:rgba(10,15,29,0.7);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1rem;font-size:0.85rem;line-height:1.6;color:#e2e8f0;white-space:pre-line;">
+                  Select an inquiry on the left to see the instant closing script.
+                </div>
+                <div style="margin-top:0.75rem;display:flex;gap:0.75rem;">
+                  <button class="btn btn-emerald btn-sm" id="btnCopyCloserResponse">📋 Copy Response</button>
+                  <button class="btn btn-ghost btn-sm" id="btnOpenCloserWhatsApp">📲 Open in WhatsApp Web</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ═══════════════════════════════
+             7. SETUP TAB
+             ═══════════════════════════════ -->
+        <section id="tabSetup" class="tab">
+          <div class="tab-header">
+            <div>
+              <h2>Platform Setup & Credentials</h2>
+              <p class="tab-sub">Configure Gemini AI key, dual sender accounts, and your agency profile.</p>
+            </div>
+            <button id="saveSetupBtn" class="btn btn-primary">
+              <span>💾 Save All Settings</span>
+            </button>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
+
+            <!-- AI Configuration -->
+            <div class="glass panel">
+              <div style="display:flex;align-items:center;gap:0.65rem;margin-bottom:1.25rem;">
+                <span style="font-size:1.4rem;">🤖</span>
+                <h3 style="font-size:1.05rem;font-weight:800;color:#fff;">Gemini AI Engine</h3>
+              </div>
+              <div class="field-group" style="margin-bottom:1rem;">
+                <label for="geminiKey">Gemini API Key</label>
+                <input type="password" id="geminiKey" class="field" value="AQ.Ab8RN6JkLyYt_t_rJDKwSNaitYdwRefx0el-Q_71attDKeGEag" placeholder="Enter Gemini API Key" />
+              </div>
+              <div class="field-group" style="margin-bottom:1rem;">
+                <label for="aiTone">Email Copywriting Tone</label>
+                <select id="aiTone" class="field field-select">
+                  <option value="friendly" selected>Warm, Friendly & Consultative (Best Reply Rates)</option>
+                  <option value="professional">Professional, Executive & Direct</option>
+                  <option value="persuasive">High-Ticket Bold & Problem-Focused</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <label for="aiPromptExtra">Custom Value Proposition Instructions</label>
+                <textarea id="aiPromptExtra" class="field field-textarea" rows="3" placeholder="e.g. Always emphasize our 3-day turnaround and zero-upfront commitment."></textarea>
+              </div>
+            </div>
+
+            <!-- Agency Details -->
+            <div class="glass panel">
+              <div style="display:flex;align-items:center;gap:0.65rem;margin-bottom:1.25rem;">
+                <span style="font-size:1.4rem;">👤</span>
+                <h3 style="font-size:1.05rem;font-weight:800;color:#fff;">Agency & Sender Identity</h3>
+              </div>
+              <div class="geo-row" style="margin-bottom:1rem;">
+                <div class="field-group">
+                  <label for="yourName">Your Name</label>
+                  <input type="text" id="yourName" class="field" value="Swastik" placeholder="Swastik" />
+                </div>
+                <div class="field-group">
+                  <label for="yourRole">Your Role</label>
+                  <input type="text" id="yourRole" class="field" value="Web Designer & Growth Specialist" placeholder="Web Designer" />
+                </div>
+              </div>
+              <div class="field-group" style="margin-bottom:1rem;">
+                <label for="yourPhone">WhatsApp / Phone Number</label>
+                <input type="text" id="yourPhone" class="field" value="9511347627" placeholder="9511347627" />
+              </div>
+              <div class="field-group">
+                <label for="yourWebsite">Agency Website / Portfolio</label>
+                <input type="url" id="yourWebsite" class="field" value="https://swastik.dev" placeholder="https://swastik.dev" />
+              </div>
+            </div>
+
+            
+            <!-- Auto-Pilot Client Sweep Engine (Toggle ON / OFF & Configurable) -->
+            <div class="glass panel" style="grid-column:1 / -1;border:1px solid rgba(212,175,55,0.4);background:linear-gradient(135deg,rgba(212,175,55,0.06),rgba(0,0,0,0.4));">
+              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
+                <div style="display:flex;align-items:center;gap:0.75rem;">
+                  <span style="font-size:1.6rem;">🤖</span>
+                  <div>
+                    <h3 style="font-size:1.1rem;font-weight:800;color:#fff;">Auto-Pilot Client Sweep Engine</h3>
+                    <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.2rem;">Automatically discover businesses, draft AI emails, and balance across senders on your schedule.</p>
+                  </div>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.85rem;">
+                  <span id="autoSweepStatusLabel" style="font-size:0.85rem;font-weight:800;color:#94a3b8;">⚪ PAUSED (OFF)</span>
+                  <label class="switch">
+                    <input type="checkbox" id="toggleAutoSweep" onchange="window.toggleAutoSweepSettings(this.checked)">
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Collapsible Settings Panel (Default hidden until turned ON) -->
+              <div id="autoSweepSettingsContainer" style="display:none;margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.08);grid-template-columns:repeat(auto-fit, minmax(210px, 1fr));gap:1rem;">
+                <div class="field-group">
+                  <label for="autoSweepTime">⏰ Daily Start Time</label>
+                  <input type="time" id="autoSweepTime" class="field" value="00:00" />
+                </div>
+                <div class="field-group">
+                  <label for="autoSweepCount">🔢 Clients to Find</label>
+                  <select id="autoSweepCount" class="field field-select">
+                    <option value="500" selected>500 Clients (Recommended Batch)</option>
+                    <option value="250">250 Clients (Single Sender Quota)</option>
+                    <option value="100">100 Clients (Quick Test Batch)</option>
+                    <option value="1000">1000 Clients (Fleet Enterprise Sweep)</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label for="autoSweepNiche">🎯 Target Niche / Category</label>
+                  <select id="autoSweepNiche" class="field field-select">
+                    <option value="all" selected>All High-Ticket Niches (Mixed)</option>
+                    <option value="cafe">☕ Cafes & Coffee Shops</option>
+                    <option value="restaurant">🍽️ Fine Dining & Restaurants</option>
+                    <option value="gym">💪 Gyms & Fitness Centers</option>
+                    <option value="salon">💇 Luxury Salons & Spas</option>
+                    <option value="dentist">🦷 Dentists & Dental Clinics</option>
+                    <option value="hotel">🏨 Boutique Hotels & Resorts</option>
+                    <option value="bakery">🧁 Artisan Bakeries</option>
+                    <option value="lawyer">⚖️ Law Firms & Attorneys</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label for="autoSweepContinent">🌍 Target Continent</label>
+                  <select id="autoSweepContinent" class="field field-select">
+                    <option value="worldwide" selected>🌐 Worldwide (Tier 1 Default)</option>
+                    <option value="asia">🌏 Asia</option>
+                    <option value="europe">🌍 Europe</option>
+                    <option value="north_america">🌎 North America</option>
+                    <option value="middle_east">🕌 Middle East</option>
+                    <option value="oceania">🦘 Oceania / Australia</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label for="autoSweepCity">🏙️ Target City / Region (Optional)</label>
+                  <input type="text" id="autoSweepCity" class="field" value="" placeholder="Any City / Worldwide (Optional)" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Multi-Sender Setup -->
+            <div class="glass panel" style="grid-column:1 / -1;">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;">
+                <div style="display:flex;align-items:center;gap:0.65rem;">
+                  <span style="font-size:1.4rem;">📧</span>
+                  <div>
+                    <h3 style="font-size:1.05rem;font-weight:800;color:#fff;">Multi-Sender Gmail Fleet & Auto-Switch Relay (Up to 6 Slots)</h3>
+                    
+                  </div>
+                </div>
+                <span class="status-pill active" style="font-size:0.75rem;background:rgba(212,175,55,0.15);color:#f4dda9;border:1px solid rgba(212,175,55,0.3);">⚡ Auto-Switch on Limit Hit: ACTIVE</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-bottom:1rem;">
+                <div class="field-group">
+                  <label for="email1">Sender Slot 1 (Primary)</label>
+                  <input type="email" id="email1" class="field" value="gagann33nn@gmail.com" placeholder="primary@gmail.com" />
+                </div>
+                <div class="field-group">
+                  <label for="email2">Sender Slot 2 (Active)</label>
+                  <input type="email" id="email2" class="field" value="ig.swastik0@gmail.com" placeholder="sender2@gmail.com" />
+                </div>
+                <div class="field-group">
+                  <label for="email3">Sender Slot 3 (Active)</label>
+                  <input type="email" id="email3" class="field" value="ig.swastik0.1@gmail.com" placeholder="sender3@gmail.com" />
+                </div>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-bottom:1.25rem;">
+                <div class="field-group">
+                  <label for="email4">Sender Slot 4 (Active)</label>
+                  <input type="email" id="email4" class="field" value="ig.swastik0.02@gmail.com" placeholder="sender4@gmail.com" />
+                </div>
+                <div class="field-group">
+                  <label for="email5">Sender Slot 5 (Active)</label>
+                  <input type="email" id="email5" class="field" value="dhalamma769@gmail.com" placeholder="sender5@gmail.com" />
+                </div>
+                <div class="field-group">
+                  <label for="email6">Sender Slot 6 (Optional)</label>
+                  <input type="email" id="email6" class="field" placeholder="sender6@gmail.com" />
+                </div>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:1rem;">
+                <div class="field-group">
+                  <label for="dailyLimitPerAccount">Limit Per Account (Roll-Over)</label>
+                  <input type="number" id="dailyLimitPerAccount" class="field" value="250" min="50" max="500" />
+                </div>
+                <div class="field-group">
+                  <label for="nightlyTime">Scheduled Batch Time</label>
+                  <input type="time" id="nightlyTime" class="field" value="00:00" />
+                </div>
+                <div class="field-group">
+                  <label for="smtpHost">SMTP Relay / Gateway</label>
+                  <input type="text" id="smtpHost" class="field" value="smtp.gmail.com" placeholder="smtp.gmail.com" />
+                </div>
+                <div class="field-group">
+                  <label for="emailRelayUrl">Email Webhook / Relay URL (Optional)</label>
+                  <input type="url" id="emailRelayUrl" class="field" placeholder="https://your-domain.com/api/send" />
+                </div>
+                <div class="field-group">
+                  <label for="sendDelay">Pacing (Secs Between)</label>
+                  <input type="number" id="sendDelay" class="field" value="3" min="1" max="60" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Portfolio / Past Work Showcase (AI Auto-Match) -->
+            <div class="glass panel" style="grid-column:1 / -1;">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;">
+                <div style="display:flex;align-items:center;gap:0.65rem;">
+                  <span style="font-size:1.4rem;">🌐</span>
+                  <div>
+                    <h3 style="font-size:1.05rem;font-weight:800;color:#fff;">Previous Work Portfolio (Smart AI Match)</h3>
+                    <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.2rem;">Add your live past websites. When AI crafts an email, it automatically selects and inserts the most relevant past build matching that business's exact niche!</p>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-ghost btn-sm" id="btnAddPortfolioItem" style="border-color:rgba(14, 165, 233,0.4);color:#bae6fd;">
+                  + Add Live Website
+                </button>
+              </div>
+
+              <div id="portfolioItemList" style="display:flex;flex-direction:column;gap:0.75rem;">
+                <!-- Dynamically populated portfolio rows -->
+              </div>
+            </div>
+
+            <!-- Free Telegram Bot Alert Integration -->
+            <div class="glass panel" style="grid-column:1 / -1;">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;">
+                <div style="display:flex;align-items:center;gap:0.65rem;">
+                  <span style="font-size:1.4rem;">✈️</span>
+                  <div>
+                    <h3 style="font-size:1.05rem;font-weight:800;color:#fff;">Free Unlimited Telegram Alerts (Zero Costs)</h3>
+                    
+                  </div>
+                </div>
+                <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+                  <button type="button" class="btn btn-emerald btn-sm" id="btnTestTelegramAlert">
+                    📲 Send Connection Ping
+                  </button>
+                  <button type="button" class="btn btn-cyan btn-sm" id="btnTestTelegramReply" onclick="window.receiveInboundClientReply()">
+                    💬 Test Inbound Reply + 1-Tap Draft
+                  </button>
+                  <button type="button" class="btn btn-sm" style="background:rgba(212,175,55,0.18);color:var(--gold-light);border:1px solid var(--border-gold);" id="btnTestDailyReport" onclick="window.sendDailySummaryToTelegram()">
+                    📊 Send Whole Day Report
+                  </button>
+                </div>
+              </div>
+
+              <div style="grid-template-columns:1fr 1fr;gap:1rem;display:grid;">
+                <div class="field-group">
+                  <label for="teleBotToken">Telegram Bot Token</label>
+                  <input type="text" id="teleBotToken" class="field" placeholder="e.g. 7123456789:AAHk..." />
+                  <span style="font-size:0.72rem;color:var(--text-dim);">Created free in 30 seconds via @BotFather on Telegram.</span>
+                </div>
+                <div class="field-group">
+                  <label for="teleChatId">Your Telegram Chat ID / Channel ID</label>
+                  <input type="text" id="teleChatId" class="field" placeholder="e.g. 987654321 or @yourchannel" />
+                  <span style="font-size:0.72rem;color:var(--text-dim);">Get your chat ID instantly by sending any message to @userinfobot.</span>
+                </div>
+                <div class="field-group" style="grid-column:1 / -1;margin-top:0.25rem;">
+                  <label for="alertChannelPref">Active Alert Channel</label>
+                  <select id="alertChannelPref" class="field field-select">
+                    <option value="telegram" selected>✈️ Telegram Bot Only (100% Free & Unlimited — Zero Cost)</option>
+                    <option value="dual">⚡ Dual Dispatch (Both Free Telegram + WhatsApp to 9511347627)</option>
+                    <option value="whatsapp">💬 WhatsApp Only (via Web / CallMeBot to 9511347627)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email Signature -->
+            <div class="glass panel" style="grid-column:1 / -1;">
+              <div style="display:flex;align-items:center;gap:0.65rem;margin-bottom:1rem;">
+                <span style="font-size:1.4rem;">✍️</span>
+                <h3 style="font-size:1.05rem;font-weight:800;color:#fff;">Standard Email Signature</h3>
+              </div>
+              <textarea id="emailSignature" class="field field-textarea" rows="4" placeholder="Best regards,&#10;Swastik | Web Designer&#10;📱 WhatsApp: +91 9511347627&#10;🌐 https://swastik.dev"></textarea>
+            </div>
+
+            <!-- 💰 SLIDING COUNTRY PRICING PANEL -->
+            <div class="glass panel" style="grid-column:1 / -1;border:1px solid rgba(212,175,55,0.4);background:linear-gradient(135deg,rgba(212,175,55,0.07),rgba(0,0,0,0.4));">
+              <div style="display:flex;align-items:center;justify-content:space-between;cursor:pointer;" onclick="window.togglePricingPanel()">
+                <div style="display:flex;align-items:center;gap:0.75rem;">
+                  <span style="font-size:1.4rem;">💰</span>
+                  <div>
+                    <h3 style="font-size:1.05rem;font-weight:800;color:#fff;">Country Pricing Slots</h3>
+                    <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.15rem;">Click to open — set price per country. Auto-fills in Approve &amp; Reply tabs.</p>
+                  </div>
+                </div>
+                <span id="pricingPanelArrow" style="font-size:1.2rem;color:#f4dda9;transition:transform 0.3s;">▼</span>
+              </div>
+
+              <!-- Sliding Panel Content -->
+              <div id="pricingPanelContent" style="overflow:hidden;max-height:0;transition:max-height 0.45s ease;margin-top:0;">
+                <div style="padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.08);margin-top:1rem;">
+                  <p style="font-size:0.8rem;color:#94a3b8;margin-bottom:1rem;">Set your package price per country. These prices auto-fill into email proposals &amp; client reply drafts when they ask about pricing.</p>
+                  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:0.85rem;" id="setupPricingGrid">
+
+                    <!-- India -->
+                    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:0.85rem;">
+                      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
+                        <span style="font-size:1.1rem;">🇮🇳</span><strong style="color:#fff;font-size:0.88rem;">India (₹ INR)</strong>
+                      </div>
+                      <div style="display:flex;gap:0.4rem;align-items:center;">
+                        <span style="color:#94a3b8;font-size:0.82rem;">₹</span>
+                        <input type="number" id="setupPrice_IN" class="field" style="padding:0.3rem 0.5rem;font-size:0.85rem;" placeholder="12500" min="0" oninput="window.saveSetupPrice('IN','₹','INR',this.value)" />
+                      </div>
+                    </div>
+
+                    <!-- USA -->
+                    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:0.85rem;">
+                      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
+                        <span style="font-size:1.1rem;">🇺🇸</span><strong style="color:#fff;font-size:0.88rem;">USA ($ USD)</strong>
+                      </div>
+                      <div style="display:flex;gap:0.4rem;align-items:center;">
+                        <span style="color:#94a3b8;font-size:0.82rem;">$</span>
+                        <input type="number" id="setupPrice_US" class="field" style="padding:0.3rem 0.5rem;font-size:0.85rem;" placeholder="299" min="0" oninput="window.saveSetupPrice('US','$','USD',this.value)" />
+                      </div>
+                    </div>
+
+                    <!-- UK -->
+                    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:0.85rem;">
+                      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
+                        <span style="font-size:1.1rem;">🇬🇧</span><strong style="color:#fff;font-size:0.88rem;">UK (£ GBP)</strong>
+                      </div>
+                      <div style="display:flex;gap:0.4rem;align-items:center;">
+                        <span style="color:#94a3b8;font-size:0.82rem;">£</span>
+                        <input type="number" id="setupPrice_GB" class="field" style="padding:0.3rem 0.5rem;font-size:0.85rem;" placeholder="249" min="0" oninput="window.saveSetupPrice('GB','£','GBP',this.value)" />
+                      </div>
+                    </div>
+
+                    <!-- UAE -->
+                    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:0.85rem;">
+                      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
+                        <span style="font-size:1.1rem;">🇦🇪</span><strong style="color:#fff;font-size:0.88rem;">UAE (AED)</strong>
+                      </div>
+                      <div style="display:flex;gap:0.4rem;align-items:center;">
+                        <span style="color:#94a3b8;font-size:0.82rem;">AED</span>
+                        <input type="number" id="setupPrice_AE" class="field" style="padding:0.3rem 0.5rem;font-size:0.85rem;" placeholder="1100" min="0" oninput="window.saveSetupPrice('AE','AED','AED',this.value)" />
+                      </div>
+                    </div>
+
+                    <!-- Australia -->
+                    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:0.85rem;">
+                      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
+                        <span style="font-size:1.1rem;">🇦🇺</span><strong style="color:#fff;font-size:0.88rem;">Australia (A$)</strong>
+                      </div>
+                      <div style="display:flex;gap:0.4rem;align-items:center;">
+                        <span style="color:#94a3b8;font-size:0.82rem;">A$</span>
+                        <input type="number" id="setupPrice_AU" class="field" style="padding:0.3rem 0.5rem;font-size:0.85rem;" placeholder="449" min="0" oninput="window.saveSetupPrice('AU','A$','AUD',this.value)" />
+                      </div>
+                    </div>
+
+                    <!-- Canada -->
+                    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:0.85rem;">
+                      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
+                        <span style="font-size:1.1rem;">🇨🇦</span><strong style="color:#fff;font-size:0.88rem;">Canada (CA$)</strong>
+                      </div>
+                      <div style="display:flex;gap:0.4rem;align-items:center;">
+                        <span style="color:#94a3b8;font-size:0.82rem;">CA$</span>
+                        <input type="number" id="setupPrice_CA" class="field" style="padding:0.3rem 0.5rem;font-size:0.85rem;" placeholder="399" min="0" oninput="window.saveSetupPrice('CA','CA$','CAD',this.value)" />
+                      </div>
+                    </div>
+
+                    <!-- Singapore -->
+                    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:0.85rem;">
+                      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
+                        <span style="font-size:1.1rem;">🇸🇬</span><strong style="color:#fff;font-size:0.88rem;">Singapore (S$)</strong>
+                      </div>
+                      <div style="display:flex;gap:0.4rem;align-items:center;">
+                        <span style="color:#94a3b8;font-size:0.82rem;">S$</span>
+                        <input type="number" id="setupPrice_SG" class="field" style="padding:0.3rem 0.5rem;font-size:0.85rem;" placeholder="399" min="0" oninput="window.saveSetupPrice('SG','S$','SGD',this.value)" />
+                      </div>
+                    </div>
+
+                    <!-- Germany/Europe -->
+                    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:0.85rem;">
+                      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
+                        <span style="font-size:1.1rem;">🇪🇺</span><strong style="color:#fff;font-size:0.88rem;">Europe (€ EUR)</strong>
+                      </div>
+                      <div style="display:flex;gap:0.4rem;align-items:center;">
+                        <span style="color:#94a3b8;font-size:0.82rem;">€</span>
+                        <input type="number" id="setupPrice_EU" class="field" style="padding:0.3rem 0.5rem;font-size:0.85rem;" placeholder="279" min="0" oninput="window.saveSetupPrice('EU','€','EUR',this.value)" />
+                      </div>
+                    </div>
+
+                  </div>
+                  <div style="margin-top:1rem;font-size:0.75rem;color:var(--text-dim);">
+                    💡 Prices are saved automatically as you type and immediately apply to all existing drafts &amp; reply proposals.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ⚠️ DEDICATED CLEAN SLATE / FACTORY RESET PANEL (Only resets when user clicks) -->
+            <div class="glass panel" style="grid-column:1 / -1;border:1px solid rgba(239,68,68,0.45);background:linear-gradient(135deg,rgba(239,68,68,0.08),rgba(0,0,0,0.55));border-radius:12px;padding:1.35rem 1.5rem;">
+              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.25rem;">
+                <div style="display:flex;align-items:center;gap:1rem;max-width:720px;">
+                  <span style="font-size:2rem;line-height:1;">🔄</span>
+                  <div>
+                    <h3 style="font-size:1.1rem;font-weight:800;color:#fca5a5;margin-bottom:0.25rem;">Reset Database &amp; Dashboard (Clean New Start)</h3>
+                    <p style="font-size:0.83rem;color:#cbd5e1;line-height:1.45;">
+                      Start completely fresh with 0 discovered leads, 0 pending drafts, 0 sent history, and 0 counters. Your platform settings, 5-sender fleet, and API keys remain 100% safe and preserved. Resets smoothly in under 10 seconds.
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <button type="button" id="btnFactoryResetSetup" class="btn btn-danger" style="background:linear-gradient(135deg,#dc2626,#b91c1c);border:1px solid #ef4444;color:#fff;font-weight:800;font-size:0.9rem;padding:0.75rem 1.6rem;border-radius:8px;cursor:pointer;display:inline-flex;align-items:center;gap:0.6rem;box-shadow:0 4px 14px rgba(220,38,38,0.35);transition:all 0.2s ease;" onclick="window.triggerSetupCleanReset()">
+                    <span>⚠️</span>
+                    <span>Reset Database &amp; Dashboard</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- ─── EMAIL PREVIEW & EDIT MODAL ─── -->
+  <div id="emailModal" class="modal-overlay hidden">
+    <div class="modal glass-deep">
+      <div class="modal-header">
+        <h3 id="modalTitle" style="font-size:1.1rem;font-weight:800;color:#fff;">Email Preview & Customization</h3>
+        <button id="modalClose" class="btn btn-ghost btn-sm" style="padding:0.35rem 0.65rem;">✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="display:flex;flex-direction:column;gap:0.6rem;background:rgba(255,255,255,0.03);padding:0.85rem;border-radius:var(--radius-sm);border:1px solid var(--border);">
+          <div style="display:flex;justify-content:space-between;font-size:0.82rem;">
+            <span style="color:var(--text-dim);">To:</span>
+            <strong id="modalTo" style="color:#fff;"></strong>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:0.82rem;">
+            <span style="color:var(--text-dim);">Assigned Sender:</span>
+            <strong id="modalFrom" style="color:#7dd3fc;"></strong>
+          </div>
+        </div>
+        <div class="field-group">
+          <label for="modalSubject">Subject Line</label>
+          <input type="text" id="modalSubject" class="field" />
+        </div>
+        <div class="field-group">
+          <label for="modalBody">Email Body</label>
+          <textarea id="modalBody" class="field field-textarea" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="modalReject" class="btn btn-danger btn-sm">🗑️ Reject</button>
+        <button id="modalApprove" class="btn btn-emerald btn-sm">✅ Approve Draft</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── DATABASE INSPECTOR & BACKUP MODAL ─── -->
+  <div id="dbModal" class="modal-overlay hidden">
+    <div class="modal glass-deep">
+      <div class="modal-header">
+        <h3 style="font-size:1.1rem;font-weight:800;color:#fff;">SwastikEnterpriseDB Status & Tools</h3>
+        <button id="dbModalClose" class="btn btn-ghost btn-sm">✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;">
+          <div style="background:rgba(255,255,255,0.03);padding:1rem;border-radius:var(--radius-sm);border:1px solid var(--border);">
+            <div style="font-size:0.75rem;color:var(--text-dim);text-transform:uppercase;font-weight:700;">Unique Businesses Guarded</div>
+            <div style="font-size:1.6rem;font-weight:800;color:#fff;margin-top:0.35rem;" id="dbModalBizCount">0</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.03);padding:1rem;border-radius:var(--radius-sm);border:1px solid var(--border);">
+            <div style="font-size:0.75rem;color:var(--text-dim);text-transform:uppercase;font-weight:700;">Permanently Contacted / Suppressed</div>
+            <div style="font-size:1.6rem;font-weight:800;color:var(--emerald);margin-top:0.35rem;" id="dbModalSentCount">0</div>
+          </div>
+        </div>
+
+        <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.6;">
+          <strong>Zero-Repeat Guarantee:</strong> Every business scanned is validated against domain, phone, email, and normalized name. Businesses once contacted can never be contacted again.
+        </p>
+
+        <div style="margin-top:1rem;display:flex;gap:0.75rem;">
+          <button id="btnExportDBJSON" class="btn btn-primary btn-sm">
+            <span>📥 Export Database Backup (JSON)</span>
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="dbModalOk" class="btn btn-ghost btn-sm">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── FLOATING ACTION DOCK (For bulk approvals) ─── -->
+  <div id="floatingDock" class="floating-dock">
+    <div style="display:flex;align-items:center;gap:0.75rem;">
+      <span style="font-size:0.85rem;font-weight:700;color:#fff;">⚡ <span id="dockSelectedCount">0</span> Drafts Selected</span>
+      <span style="font-size:0.75rem;color:var(--text-dim);">|</span>
+      <span style="font-size:0.8rem;color:#bae6fd;" id="dockSplitPreview">Split: 0 / 0</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:0.75rem;">
+      <button id="dockApproveBtn" class="btn btn-emerald btn-sm">Approve Selected</button>
+      <button id="dockRejectBtn" class="btn btn-danger btn-sm">Reject Selected</button>
+    </div>
+  </div>
+
+  <!-- ─── TOAST NOTIFICATION ─── -->
+  <div id="toast" class="toast hidden"></div>
+
+  <!-- ─── STEP-BASED LOADING EXPERIENCE (UGI SPECIFICATION) ─── -->
+  <div id="loadingOverlay" class="loading-overlay hidden" role="dialog" aria-modal="true" aria-live="polite">
+    <div class="step-loading-card glass-deep">
+      <div class="step-loading-header">
+        <div class="step-header-left">
+          <div class="step-spinner-ring"></div>
+          <div>
+            <h4 id="loadingTitle" class="step-card-title">Processing Request</h4>
+            <p id="loadingMsg" class="step-card-sub">Initializing pipeline…</p>
+          </div>
+        </div>
+        <div class="step-header-right">
+          <span class="live-pulse-badge">LIVE PIPELINE</span>
+        </div>
+      </div>
+
+      <!-- Easing Animated Progress Bar -->
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="loadingProgress" style="width:0%;"></div>
+      </div>
+      <div class="progress-meta">
+        <span id="loadingPercentText">0%</span>
+        <span id="loadingElapsedText">⏱️ 0.0s</span>
+      </div>
+
+      <!-- Animated Step Checklist -->
+      <div class="step-list-container" id="stepListContainer">
+        <!-- Injected dynamically by step loader -->
+      </div>
+
+      <!-- Rotating Micro-Copy & Live Counters Footer -->
+      <div class="step-loading-footer">
+        <div class="step-footer-tip" id="stepFooterTip">💡 Anti-spam engine verifies domain MX records & duplicate suppression before drafting.</div>
+        <div class="step-footer-counter" id="stepFooterCounter">Scanned: 0 records</div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Core Shared Runtime Preamble -->
+  <script>
+    window.el = window.el || function(id) { return document.getElementById(id); };
+    window.delay = window.delay || function(ms) { return new Promise(function(r) { setTimeout(r, ms); }); };
+    window.escapeHtml = window.escapeHtml || function(str) {
+      if (!str || typeof str !== 'string') return '';
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    };
+
+    // Keyboard Shortcuts (Part 5 Upgrade)
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        const overlay = document.getElementById('loadingOverlay');
+        if (overlay && !overlay.classList.contains('hidden') && window.currentOperationCanCancel) {
+          overlay.classList.add('hidden');
+        }
+      }
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+        const approveTab = document.getElementById('tabApprove');
+        const findTab = document.getElementById('tabFindClients');
+        if (approveTab && approveTab.classList.contains('active')) {
+          const btn = document.getElementById('btnSendAllSafe1Click');
+          if (btn && !btn.disabled) btn.click();
+        } else if (findTab && findTab.classList.contains('active')) {
+          const searchBtn = document.getElementById('searchBtn');
+          if (searchBtn && !searchBtn.disabled) searchBtn.click();
+        }
+      }
+    });
+  </script>
+  <!-- Unified System Limits -->
+  <script src="js/limits.js?v=9.0"></script>
+  <!-- Application Scripts -->
+  <script src="js/db.js?v=9.0"></script>
+  <script src="js/mockup.js?v=8.5"></script>
+  <script src="js/mailer.js?v=8.5"></script>
+  <script src="js/followup.js?v=9.0"></script>
+  <script src="js/tracker.js?v=8.5"></script>
+  <script src="js/crm.js?v=8.5"></script>
+  <script src="js/telegram.js?v=8.5"></script>
+  <script src="js/whatsapp.js?v=8.5"></script>
+  <script src="js/ai.js?v=8.5"></script>
+  <script src="js/topDockController.js?v=8.5"></script>
+  <script src="js/pricing-panel.js?v=8.5"></script>
+  <script src="js/draft-seed.js?v=8.5"></script>
+  <script src="js/core-functions.js?v=10.0"></script>
+  <script src="js/app.js?v=10.0"></script>
+  <!-- SWASTIK Command Center Dock Interaction -->
+  <script>
+  (function() {
+    function initDock() {
+      var dock = document.querySelector("#proximityDock .dock-inner");
+      if (!dock) return;
+      var items = Array.from(dock.querySelectorAll(".dock-item"));
+
+      dock.addEventListener("mousemove", function(e) {
+        var rect = dock.getBoundingClientRect();
+        var mouseX = e.clientX;
+        items.forEach(function(item) {
+          var itemRect = item.getBoundingClientRect();
+          var center = itemRect.left + itemRect.width / 2;
+          var dist = Math.abs(mouseX - center);
+          if (dist < 90) {
+            var factor = 1 - (dist / 90);
+            item.style.transform = "translateY(-" + (factor * 3.5).toFixed(1) + "px)";
+          } else {
+            item.style.transform = "translateY(0)";
+          }
+        });
+      });
+
+      dock.addEventListener("mouseleave", function() {
+        items.forEach(function(item) {
+          item.style.transform = "translateY(0)";
+        });
+      });
+    }
+
+    function init() {
+      var app = document.getElementById("mainApp");
+      if (app && !app.classList.contains("hidden")) {
+        initDock();
+      } else {
+        var interval = setInterval(function() {
+          var appCheck = document.getElementById("mainApp");
+          if (appCheck && !appCheck.classList.contains("hidden")) {
+            clearInterval(interval);
+            initDock();
+          }
+        }, 120);
+      }
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else {
+      init();
+    }
+
+    window.initProximityDock = initDock;
+  })();
+  </script>
+  <!-- Fallback & Defensive Stubs -->
+  <div id="crmBoard" style="display:none;" aria-hidden="true"></div>
+  <button id="approveAllBtn" style="display:none;" aria-hidden="true"></button>
+  <div id="mobileMenuBtn" style="display:none;" aria-hidden="true"></div>
+  <aside id="sidebar" style="display:none;" aria-hidden="true"></aside>
+
+  <!-- ═══ 24/7 AUTOMATIC INBOX-TO-REPLIES SYNC ENGINE ═══ -->
+  <script>
+  (function() {
+    // Automatically poll 5 Gmail inboxes and sync directly into Replies tab ('Reply Send Email' & 'Reply Sended')
+    async function autoSyncInboxesToRepliesTab() {
+      try {
+        let emails = [];
+        try {
+          const res = await fetch('/api/emails');
+          if (res.ok) emails = await res.json();
+        } catch(e) {}
+
+        if (!Array.isArray(emails) || !emails.length) return;
+        if (!window.state || !Array.isArray(window.state.replies)) return;
+
+        let hasNew = false;
+        emails.forEach(em => {
+          const emailAddr = (em.from.match(/<([^>]+)>/) || [,''])[1] || em.from;
+          const cleanEmail = emailAddr.trim().toLowerCase();
+          const existing = window.state.replies.find(r => 
+            (r.email && r.email.toLowerCase() === cleanEmail) || 
+            (r.id && (r.id === em.id || r.id === em.uid))
+          );
+
+          if (!existing) {
+            hasNew = true;
+            const clientName = (em.from.match(/^"?([^"<@]+)/) || ['','Client Lead'])[1].trim() || 'Client Lead';
+            const smartProposal = `Hi ${clientName},\n\nThank you for reaching out! We can design and launch your complete high-converting, mobile-responsive website in just 5 to 7 days.\n\nPackage includes Google SEO optimization, 1-click WhatsApp customer reservations, and 1 full year of domain & hosting included.\n\nLet's connect on WhatsApp: +91 9511347627\n\nBest regards,\nSwastik | Web Designer & Growth Specialist`;
+
+            window.state.replies.unshift({
+              id: em.id || ('rep_' + Date.now() + '_' + Math.random().toString(36).substr(2,5)),
+              from: clientName,
+              company: clientName,
+              email: cleanEmail,
+              phone: '+91 9511347627',
+              subject: em.subject || 'Website Consultation & Proposal',
+              message: em.snippet || 'Inquiry regarding website build packages.',
+              status: em.status === 'replied' ? 'replied' : 'needs_reply',
+              receivedAt: em.receivedAt || Date.now(),
+              account: em.account || '',
+              thread: [
+                {
+                  sender: 'client',
+                  message: em.snippet || 'Inquiry regarding website build packages.',
+                  timestamp: em.receivedAt || Date.now()
+                },
+                {
+                  sender: 'you',
+                  message: smartProposal,
+                  timestamp: Date.now()
+                }
+              ]
+            });
+          } else if (em.status === 'replied' && existing.status !== 'replied') {
+            existing.status = 'replied';
+            hasNew = true;
+          }
+        });
+
+        if (hasNew) {
+          localStorage.setItem('swastik_replies', JSON.stringify(window.state.replies));
+          if (typeof window.renderRepliesList === 'function') window.renderRepliesList();
+          if (typeof window.updateBadges === 'function') window.updateBadges();
+          if (typeof window.updateStats === 'function') window.updateStats();
+        }
+      } catch(err) {
+        console.warn('[Replies Auto-Sync] Notice:', err.message);
+      }
+    }
+
+    // Auto-sync on startup and every 60 seconds
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(autoSyncInboxesToRepliesTab, 2000);
+      setInterval(autoSyncInboxesToRepliesTab, 60000);
+    });
+  })();
+  </script>
+</body>
+</html>
+
+
+

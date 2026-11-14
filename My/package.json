@@ -1,0 +1,15 @@
+{
+  "name": "swastik-outreach-engine",
+  "version": "5.0.0",
+  "description": "24/7 Autonomous AI Outreach & Client Acquisition Command Center",
+  "scripts": {
+    "dev": "node server.js",
+    "cloud": "node cloud-crawler/runner.js --daemon",
+    "midnight": "node cloud-crawler/runner.js --batch",
+    "report": "node cloud-crawler/runner.js --report",
+    "pulse": "node cloud-crawler/runner.js --pulse"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

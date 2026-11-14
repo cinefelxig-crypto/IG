@@ -1,0 +1,58 @@
+[
+  {
+    "id": "email_inq_1",
+    "uid": "1001",
+    "from": "The Roasted Bean Café <roastedbeancafe@gmail.com>",
+    "subject": "Re: High-Converting Website Concept & Table Booking Portal",
+    "date": "Sat, 07 Nov 2026 08:30:00 +0530",
+    "snippet": "Hi Swastik Team, we received your concept preview! We definitely need mobile-first table booking and WhatsApp reservations. What is your pricing and can we launch next week?",
+    "account": "gagann33nn@gmail.com",
+    "status": "inbox",
+    "receivedAt": 1794018600000
+  },
+  {
+    "id": "email_inq_2",
+    "uid": "1002",
+    "from": "IronForge Elite Fitness <ironforge.fitness@gmail.com>",
+    "subject": "Re: Modern Gym Member Portal & WhatsApp Lead Generator",
+    "date": "Sat, 07 Nov 2026 07:15:00 +0530",
+    "snippet": "Hello Swastik, interested in the modern booking portal for our gym members. Can we connect on WhatsApp at +91 9511347627 to discuss our membership tiers?",
+    "account": "ig.swastik0@gmail.com",
+    "status": "inbox",
+    "receivedAt": 1794014100000
+  },
+  {
+    "id": "email_inq_3",
+    "uid": "1003",
+    "from": "Glow Couture Salon & Spa <glowcouture.salon@gmail.com>",
+    "subject": "Re: Bridal Showcase & 1-Click WhatsApp Appointments",
+    "date": "Fri, 06 Nov 2026 21:40:00 +0530",
+    "snippet": "Hi! Received your proposal for our salon bridal portfolio showcase. How long does the design sprint take and is hosting included in the ₹12,500 package?",
+    "account": "ig.swastik0.1@gmail.com",
+    "status": "inbox",
+    "receivedAt": 1793979600000
+  },
+  {
+    "id": "email_inq_4",
+    "uid": "1004",
+    "from": "Dr. Mehta Dental Clinic <drmehtadental@gmail.com>",
+    "subject": "Re: Patient Online Booking & Google SEO Optimization",
+    "date": "Fri, 06 Nov 2026 19:20:00 +0530",
+    "snippet": "Good day Swastik, we want to upgrade our clinic website and patient appointment booking. Please send your complete portfolio and payment terms.",
+    "account": "ig.swastik0.02@gmail.com",
+    "status": "inbox",
+    "receivedAt": 1793971200000
+  },
+  {
+    "id": "email_inq_5",
+    "uid": "1005",
+    "from": "Urban Steam Coffee & Roasters <urbansteamcoffee@gmail.com>",
+    "subject": "Re: Turnkey Website & Direct Ordering Concept",
+    "date": "Fri, 06 Nov 2026 16:50:00 +0530",
+    "snippet": "Hey Swastik, loved the mockup preview you sent to our inbox! Can you share more past examples of restaurant & cafe websites you've built?",
+    "account": "dhalamma769@gmail.com",
+    "status": "inbox",
+    "receivedAt": 1793962200000
+  }
+]
+
