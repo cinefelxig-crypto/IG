@@ -1,0 +1,30 @@
+name: SWASTIK 24/7 Client Email Inbox Poller
+
+on:
+  schedule:
+    # Runs every 10 minutes 24/7/365 without laptop open
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  poll-inbox:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Poll all 5 inboxes and alert Telegram
+        run: |
+          node -e "
+            const ep = require('./emailPoller.js');
+            ep.startEmailPoller();
+            setTimeout(() => {
+              console.log('Inbox check complete.');
+              process.exit(0);
+            }, 75000);
+          "
